@@ -4,6 +4,8 @@
 
 Can a model fitted on previous runs predict temperatures inside a porous bed on a new run? On nine experiments from DLR and RWTH Aachen, advection-based models reduce interior rollout error. With an upwind discretization, fitted explicit diffusion drops to zero in all nine folds. [Case study and reproduction](PACKED_BED_PDE.md)
 
+A [cross-run infrared calibration replay](PACKED_BED_OPTICAL_TRANSFER.md) tests whether two measured temperature changes improve the upper boundary and interior predictions. The spread and fixed schedules trade places between repeated and changed setups.
+
 ![Measured temperatures and model errors for whole held-out packed-bed runs.](results/packed_bed_pde/heldout.png)
 
 ## Case 2 · Heat conduction in metal rods

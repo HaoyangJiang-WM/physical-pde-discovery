@@ -25,7 +25,7 @@ Median interior rollout RMSE across runs, in K.
 | Upwind advection + cooling | 9.77 | **7.80** |
 | Upwind diffusion + advection + cooling | 9.77 | **7.80** |
 
-The upwind fit retains a positive advection coefficient and sets explicit diffusion to zero in every fold. Upwind discretization introduces numerical diffusion, and the centered fit selects explicit diffusion. The data support the predictive value of an advection term within this library. The apparent diffusion contribution depends on discretization, so these measurements give no independent label for PDE support or material diffusivity. The effective field uses thermocouple temperatures, which mix gas and particle temperatures. The infrared camera observes the bed surface during cooling and is excluded from this interior benchmark. [Per-run metrics and coefficients](results/packed_bed_pde/metrics.json)
+The upwind fit retains a positive advection coefficient and sets explicit diffusion to zero in every fold. Upwind discretization introduces numerical diffusion, and the centered fit selects explicit diffusion. The data support the predictive value of an advection term within this library. The apparent diffusion contribution depends on discretization, so these measurements give no independent label for PDE support or material diffusivity. The effective field uses thermocouple temperatures, which mix gas and particle temperatures. The infrared camera observes the bed surface during cooling and is excluded from this benchmark. A [separate optical boundary replay](PACKED_BED_OPTICAL_TRANSFER.md) tests whether calibrating those readings transfers across whole runs. [Per-run metrics and coefficients](results/packed_bed_pde/metrics.json)
 
 ## Reproduce
 

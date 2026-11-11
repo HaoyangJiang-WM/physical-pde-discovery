@@ -101,9 +101,10 @@ def design(data, aggregation, scheme="centered"):
     }
 
 
-def rollout(run, columns, coefficients):
+def rollout(run, columns, coefficients, boundary_field=None):
     """Predict both interior histories using only initial state and measured boundaries."""
     grid, field = run["grid"], run["field"]
+    boundary = field if boundary_field is None else boundary_field
     gradient, curvature = axial_derivatives(np.eye(4), run["scheme"])
     operator = np.column_stack([curvature.ravel(), -gradient.ravel()]).reshape(4, 2, 2)
     expanded = np.zeros(3)
@@ -112,8 +113,8 @@ def rollout(run, columns, coefficients):
     cooling = expanded[2]
 
     def rhs(time, interior):
-        values = np.array([np.interp(time, grid, field[:, 0]), *interior,
-                           np.interp(time, grid, field[:, -1])])
+        values = np.array([np.interp(time, grid, boundary[:, 0]), *interior,
+                           np.interp(time, grid, boundary[:, -1])])
         return values @ transport + cooling * (run["initial_ambient"] - interior)
 
     solution = solve_ivp(rhs, (grid[0], grid[-1]), field[0, 1:3], t_eval=grid,
@@ -123,13 +124,18 @@ def rollout(run, columns, coefficients):
     return float(np.sqrt(np.mean((solution.y.T[1:] - field[1:, 1:3])**2)))
 
 
+def fit_coefficients(training, columns):
+    x = np.vstack([item["features"] for item in training])[:, columns]
+    y = np.concatenate([item["target"] for item in training])
+    scale = np.linalg.norm(x, axis=0)
+    return nnls(x / scale, y)[0] / scale
+
+
 def evaluate(runs, models):
     scores = {}
     for run_id, run in runs.items():
         same_regime = REPEATS[REGIME[run_id]]
         training = [runs[i] for i in same_regime if i != run_id]
-        x = np.vstack([item["features"] for item in training])
-        y = np.concatenate([item["target"] for item in training])
         scores[str(run_id)] = {
             "training_runs": [i for i in same_regime if i != run_id],
             "shutoff_min": run["shutoff_min"], "flow_Nm3_h": run["flow_Nm3_h"],
@@ -137,9 +143,7 @@ def evaluate(runs, models):
             "models": {},
         }
         for model, columns in models.items():
-            selected = x[:, columns]
-            scale = np.linalg.norm(selected, axis=0)
-            coefficients = nnls(selected / scale, y)[0] / scale
+            coefficients = fit_coefficients(training, columns)
             predicted = run["features"][:, columns] @ coefficients
             scores[str(run_id)]["models"][model] = {
                 "coefficients": coefficients.tolist(),

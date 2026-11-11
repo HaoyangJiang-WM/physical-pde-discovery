@@ -1,0 +1,2413 @@
+{
+  "source_audit": {
+    "1": {
+      "accepted": 126,
+      "excluded": {},
+      "nominal_interval_s": 60,
+      "observed_spacing_s": [
+        60
+      ]
+    },
+    "2": {
+      "accepted": 125,
+      "excluded": {
+        "20241023145024": 1
+      },
+      "nominal_interval_s": 60,
+      "observed_spacing_s": [
+        60
+      ]
+    },
+    "3": {
+      "accepted": 130,
+      "excluded": {},
+      "nominal_interval_s": 60,
+      "observed_spacing_s": [
+        60
+      ]
+    },
+    "4": {
+      "accepted": 63,
+      "excluded": {},
+      "nominal_interval_s": 60,
+      "observed_spacing_s": [
+        60
+      ]
+    },
+    "5": {
+      "accepted": 165,
+      "excluded": {},
+      "nominal_interval_s": 60,
+      "observed_spacing_s": [
+        60
+      ]
+    },
+    "6": {
+      "accepted": 100,
+      "excluded": {},
+      "nominal_interval_s": 60,
+      "observed_spacing_s": [
+        60
+      ]
+    },
+    "7": {
+      "accepted": 87,
+      "excluded": {},
+      "nominal_interval_s": 30,
+      "observed_spacing_s": [
+        60
+      ]
+    },
+    "8": {
+      "accepted": 127,
+      "excluded": {},
+      "nominal_interval_s": 30,
+      "observed_spacing_s": [
+        30
+      ]
+    },
+    "9": {
+      "accepted": 95,
+      "excluded": {
+        "20241210125057": 1,
+        "20241218141046": 1,
+        "20241114142853": 1
+      },
+      "nominal_interval_s": 60,
+      "observed_spacing_s": [
+        60
+      ]
+    }
+  },
+  "plans": 16,
+  "clock_shift_s": {
+    "0": {
+      "1": {
+        "2": {
+          "native_IR": {
+            "boundary_rmse_K": 9.793720137822257,
+            "interior_rmse_K": 12.857119093776818
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 9.186959749326284
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 10.316777398569132,
+            "interior_rmse_K": 13.641147698014734
+          },
+          "fixed": {
+            "boundary_rmse_K": 3.3004198359382624,
+            "interior_rmse_K": 8.52750101795042
+          },
+          "spread": {
+            "boundary_rmse_K": 1.7318868294957495,
+            "interior_rmse_K": 8.874265345443066
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 3.353236349534156,
+            "interior_rmse_K": 9.046174121693841
+          }
+        },
+        "3": {
+          "native_IR": {
+            "boundary_rmse_K": 9.793720137822257,
+            "interior_rmse_K": 12.857119093776818
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 9.186959749326284
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 10.155278895356105,
+            "interior_rmse_K": 13.439064620966938
+          },
+          "fixed": {
+            "boundary_rmse_K": 7.636950593948334,
+            "interior_rmse_K": 7.327290054142625
+          },
+          "spread": {
+            "boundary_rmse_K": 4.554249555983016,
+            "interior_rmse_K": 7.228655917856036
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 7.452113957763463,
+            "interior_rmse_K": 8.06993678133108
+          }
+        }
+      },
+      "2": {
+        "1": {
+          "native_IR": {
+            "boundary_rmse_K": 10.414611483412047,
+            "interior_rmse_K": 8.497342780738867
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 5.5908149898435475
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 10.876595217183592,
+            "interior_rmse_K": 8.916457683112316
+          },
+          "fixed": {
+            "boundary_rmse_K": 2.4985646199695197,
+            "interior_rmse_K": 5.103434850070434
+          },
+          "spread": {
+            "boundary_rmse_K": 1.421505009646229,
+            "interior_rmse_K": 5.586002418697385
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 2.494242347283296,
+            "interior_rmse_K": 5.600733453075202
+          }
+        },
+        "3": {
+          "native_IR": {
+            "boundary_rmse_K": 10.414611483412047,
+            "interior_rmse_K": 8.497342780738867
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 5.5908149898435475
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 10.798615311144873,
+            "interior_rmse_K": 8.852630470936324
+          },
+          "fixed": {
+            "boundary_rmse_K": 7.126062774172108,
+            "interior_rmse_K": 4.399412608638343
+          },
+          "spread": {
+            "boundary_rmse_K": 4.131648909523481,
+            "interior_rmse_K": 4.818342903886274
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 7.535118057123848,
+            "interior_rmse_K": 5.680388428981049
+          }
+        }
+      },
+      "3": {
+        "1": {
+          "native_IR": {
+            "boundary_rmse_K": 13.793861158749417,
+            "interior_rmse_K": 8.098943024695643
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 5.264541923254417
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 14.324908292413697,
+            "interior_rmse_K": 8.183351497509824
+          },
+          "fixed": {
+            "boundary_rmse_K": 4.18333739360549,
+            "interior_rmse_K": 4.644474433773321
+          },
+          "spread": {
+            "boundary_rmse_K": 4.664673399823951,
+            "interior_rmse_K": 5.091621636786337
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 5.530879778564168,
+            "interior_rmse_K": 5.252232456811646
+          }
+        },
+        "2": {
+          "native_IR": {
+            "boundary_rmse_K": 13.793861158749417,
+            "interior_rmse_K": 8.098943024695643
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 5.264541923254417
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 14.418351666590958,
+            "interior_rmse_K": 8.204705493574862
+          },
+          "fixed": {
+            "boundary_rmse_K": 3.852849520547483,
+            "interior_rmse_K": 4.332320457978143
+          },
+          "spread": {
+            "boundary_rmse_K": 4.215724452903462,
+            "interior_rmse_K": 5.018018799503003
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 5.1853836104625,
+            "interior_rmse_K": 5.014274199623628
+          }
+        }
+      },
+      "4": {
+        "1": {
+          "native_IR": {
+            "boundary_rmse_K": 4.799458999501389,
+            "interior_rmse_K": 14.218789847761176
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 15.623251251422179
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 3.442428572630975,
+            "interior_rmse_K": 14.927080386149239
+          },
+          "fixed": {
+            "boundary_rmse_K": 11.13437015825034,
+            "interior_rmse_K": 10.566662831112952
+          },
+          "spread": {
+            "boundary_rmse_K": 9.820946127027067,
+            "interior_rmse_K": 11.04073810304475
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 10.051679471165963,
+            "interior_rmse_K": 11.061589946968766
+          }
+        },
+        "2": {
+          "native_IR": {
+            "boundary_rmse_K": 4.799458999501389,
+            "interior_rmse_K": 14.218789847761176
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 15.623251251422179
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 3.2635064432098906,
+            "interior_rmse_K": 15.035153028891209
+          },
+          "fixed": {
+            "boundary_rmse_K": 11.860628274678248,
+            "interior_rmse_K": 10.438165037757393
+          },
+          "spread": {
+            "boundary_rmse_K": 10.37717119104993,
+            "interior_rmse_K": 10.811483514932723
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 11.080155731541891,
+            "interior_rmse_K": 10.959972787840076
+          }
+        },
+        "3": {
+          "native_IR": {
+            "boundary_rmse_K": 4.799458999501389,
+            "interior_rmse_K": 14.218789847761176
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 15.623251251422179
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 3.6163957764323222,
+            "interior_rmse_K": 14.82684839584379
+          },
+          "fixed": {
+            "boundary_rmse_K": 15.9994211790556,
+            "interior_rmse_K": 9.197534650576435
+          },
+          "spread": {
+            "boundary_rmse_K": 13.82471157488739,
+            "interior_rmse_K": 9.237678932024986
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 15.338351383182918,
+            "interior_rmse_K": 9.712927018228537
+          }
+        }
+      },
+      "5": {
+        "1": {
+          "native_IR": {
+            "boundary_rmse_K": 3.213826982577979,
+            "interior_rmse_K": 12.948657866390263
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 12.229105864095486
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 3.6332466008634765,
+            "interior_rmse_K": 13.31169505301609
+          },
+          "fixed": {
+            "boundary_rmse_K": 8.382095946502984,
+            "interior_rmse_K": 8.929239090498461
+          },
+          "spread": {
+            "boundary_rmse_K": 7.291090810660535,
+            "interior_rmse_K": 9.607676408079445
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 7.292214149408774,
+            "interior_rmse_K": 9.652754215078012
+          }
+        },
+        "2": {
+          "native_IR": {
+            "boundary_rmse_K": 3.213826982577979,
+            "interior_rmse_K": 12.948657866390263
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 12.229105864095486
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 3.7539253452309653,
+            "interior_rmse_K": 13.371028477295889
+          },
+          "fixed": {
+            "boundary_rmse_K": 9.39157581965512,
+            "interior_rmse_K": 8.628174717236464
+          },
+          "spread": {
+            "boundary_rmse_K": 7.85419060835139,
+            "interior_rmse_K": 9.451975741989664
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 8.704045213267733,
+            "interior_rmse_K": 9.370483571894333
+          }
+        },
+        "3": {
+          "native_IR": {
+            "boundary_rmse_K": 3.213826982577979,
+            "interior_rmse_K": 12.948657866390263
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 12.229105864095486
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 3.532293127894118,
+            "interior_rmse_K": 13.257250753040266
+          },
+          "fixed": {
+            "boundary_rmse_K": 13.460151104253265,
+            "interior_rmse_K": 7.114230751082519
+          },
+          "spread": {
+            "boundary_rmse_K": 10.66251478288747,
+            "interior_rmse_K": 8.27506140936883
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 12.927928688750402,
+            "interior_rmse_K": 8.280266767394078
+          }
+        }
+      },
+      "6": {
+        "7": {
+          "native_IR": {
+            "boundary_rmse_K": 16.40888523857826,
+            "interior_rmse_K": 13.797291385967855
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 7.124577332905501
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 15.412478604411131,
+            "interior_rmse_K": 13.309368561617944
+          },
+          "fixed": {
+            "boundary_rmse_K": 18.359107200242068,
+            "interior_rmse_K": 15.026075396067933
+          },
+          "spread": {
+            "boundary_rmse_K": 17.396592147978907,
+            "interior_rmse_K": 14.358710448662347
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 17.9564658864606,
+            "interior_rmse_K": 14.818802221603981
+          }
+        },
+        "8": {
+          "native_IR": {
+            "boundary_rmse_K": 16.40888523857826,
+            "interior_rmse_K": 13.797291385967855
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 7.124577332905501
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 18.792265088164378,
+            "interior_rmse_K": 14.91489040138733
+          },
+          "fixed": {
+            "boundary_rmse_K": 21.331141233344315,
+            "interior_rmse_K": 16.37155630963434
+          },
+          "spread": {
+            "boundary_rmse_K": 21.30106489586009,
+            "interior_rmse_K": 16.33170904703395
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 21.316103064602203,
+            "interior_rmse_K": 16.351632678334145
+          }
+        }
+      },
+      "7": {
+        "6": {
+          "native_IR": {
+            "boundary_rmse_K": 8.930277114307755,
+            "interior_rmse_K": 8.224901824051667
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 7.4976409364866825
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 19.88656403565504,
+            "interior_rmse_K": 7.9764785571642705
+          },
+          "fixed": {
+            "boundary_rmse_K": 10.639066030154183,
+            "interior_rmse_K": 5.567956238917312
+          },
+          "spread": {
+            "boundary_rmse_K": 9.57166237008802,
+            "interior_rmse_K": 4.3283034221736845
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 11.248322448519424,
+            "interior_rmse_K": 5.282497227325651
+          }
+        },
+        "8": {
+          "native_IR": {
+            "boundary_rmse_K": 8.930277114307755,
+            "interior_rmse_K": 8.224901824051667
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 7.4976409364866825
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 8.13311915979179,
+            "interior_rmse_K": 8.91638278174091
+          },
+          "fixed": {
+            "boundary_rmse_K": 8.082072139098955,
+            "interior_rmse_K": 9.935205939637859
+          },
+          "spread": {
+            "boundary_rmse_K": 7.938179995550766,
+            "interior_rmse_K": 9.907925207762256
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 8.01012606732486,
+            "interior_rmse_K": 9.921565573700057
+          }
+        }
+      },
+      "8": {
+        "6": {
+          "native_IR": {
+            "boundary_rmse_K": 7.240915066290833,
+            "interior_rmse_K": 12.381900367653758
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 14.056149735068315
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 21.18394881543157,
+            "interior_rmse_K": 11.901936008034157
+          },
+          "fixed": {
+            "boundary_rmse_K": 14.165711610699457,
+            "interior_rmse_K": 8.4273017647795
+          },
+          "spread": {
+            "boundary_rmse_K": 14.7828087121685,
+            "interior_rmse_K": 6.532626166951997
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 14.556236597680641,
+            "interior_rmse_K": 7.980078936760931
+          }
+        },
+        "7": {
+          "native_IR": {
+            "boundary_rmse_K": 7.240915066290833,
+            "interior_rmse_K": 12.381900367653758
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 14.056149735068315
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 8.841229859565134,
+            "interior_rmse_K": 12.00711246968777
+          },
+          "fixed": {
+            "boundary_rmse_K": 2.4241680339607377,
+            "interior_rmse_K": 13.434340488693264
+          },
+          "spread": {
+            "boundary_rmse_K": 3.8609803811839782,
+            "interior_rmse_K": 12.689474586291404
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 3.480462238426062,
+            "interior_rmse_K": 13.211892053261987
+          }
+        }
+      },
+      "9": {
+        "6": {
+          "native_IR": {
+            "boundary_rmse_K": 12.275906842606418,
+            "interior_rmse_K": 11.848055159342886
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 6.977988331096944
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 11.87425955454739,
+            "interior_rmse_K": 9.740993040250114
+          },
+          "fixed": {
+            "boundary_rmse_K": 3.727779734727111,
+            "interior_rmse_K": 7.941041870302483
+          },
+          "spread": {
+            "boundary_rmse_K": 5.093674312901115,
+            "interior_rmse_K": 6.618975351017437
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 5.171230003030589,
+            "interior_rmse_K": 7.558083979447289
+          }
+        },
+        "7": {
+          "native_IR": {
+            "boundary_rmse_K": 12.275906842606418,
+            "interior_rmse_K": 11.848055159342886
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 6.977988331096944
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 11.281955014129217,
+            "interior_rmse_K": 11.37026929748294
+          },
+          "fixed": {
+            "boundary_rmse_K": 15.066634930203003,
+            "interior_rmse_K": 13.32367911979008
+          },
+          "spread": {
+            "boundary_rmse_K": 14.299933122094224,
+            "interior_rmse_K": 12.650243941865169
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 14.723933010805144,
+            "interior_rmse_K": 13.133914289717406
+          }
+        },
+        "8": {
+          "native_IR": {
+            "boundary_rmse_K": 12.275906842606418,
+            "interior_rmse_K": 11.848055159342886
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 6.977988331096944
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 14.752706361395022,
+            "interior_rmse_K": 12.95547504255796
+          },
+          "fixed": {
+            "boundary_rmse_K": 17.731525390088148,
+            "interior_rmse_K": 14.542661702656378
+          },
+          "spread": {
+            "boundary_rmse_K": 17.721598007734624,
+            "interior_rmse_K": 14.501113934897017
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 17.726561698911386,
+            "interior_rmse_K": 14.521887818776698
+          }
+        }
+      }
+    },
+    "-60": {
+      "1": {
+        "2": {
+          "native_IR": {
+            "boundary_rmse_K": 8.51160710692147,
+            "interior_rmse_K": 9.93048311691033
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 9.186959749326284
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 7.552219398670871,
+            "interior_rmse_K": 12.14141038127678
+          },
+          "fixed": {
+            "boundary_rmse_K": 3.37095421495321,
+            "interior_rmse_K": 9.832132918641772
+          },
+          "spread": {
+            "boundary_rmse_K": 2.067617480685451,
+            "interior_rmse_K": 9.154114055634448
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 3.1588396664346545,
+            "interior_rmse_K": 9.244186597716745
+          }
+        },
+        "3": {
+          "native_IR": {
+            "boundary_rmse_K": 8.51160710692147,
+            "interior_rmse_K": 9.93048311691033
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 9.186959749326284
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 7.401743618545345,
+            "interior_rmse_K": 11.92796236449322
+          },
+          "fixed": {
+            "boundary_rmse_K": 4.496652754976245,
+            "interior_rmse_K": 7.306163489960678
+          },
+          "spread": {
+            "boundary_rmse_K": 4.571707247013069,
+            "interior_rmse_K": 7.477521228262106
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 4.669164484303677,
+            "interior_rmse_K": 7.698995551583854
+          }
+        }
+      },
+      "2": {
+        "1": {
+          "native_IR": {
+            "boundary_rmse_K": 8.571425208187962,
+            "interior_rmse_K": 7.684702121486196
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 5.5908149898435475
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 7.823931281794981,
+            "interior_rmse_K": 7.987906642710395
+          },
+          "fixed": {
+            "boundary_rmse_K": 3.379448270817166,
+            "interior_rmse_K": 6.495116194965463
+          },
+          "spread": {
+            "boundary_rmse_K": 1.3251484838679337,
+            "interior_rmse_K": 5.794090824969717
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 2.1441282565692568,
+            "interior_rmse_K": 5.656397471884299
+          }
+        },
+        "3": {
+          "native_IR": {
+            "boundary_rmse_K": 8.571425208187962,
+            "interior_rmse_K": 7.684702121486196
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 5.5908149898435475
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 7.7471533422190175,
+            "interior_rmse_K": 7.936850059259341
+          },
+          "fixed": {
+            "boundary_rmse_K": 3.813244697546609,
+            "interior_rmse_K": 5.013725335247435
+          },
+          "spread": {
+            "boundary_rmse_K": 3.481718669322479,
+            "interior_rmse_K": 5.299417354560685
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 4.1892719709755735,
+            "interior_rmse_K": 5.4913614531451325
+          }
+        }
+      },
+      "3": {
+        "1": {
+          "native_IR": {
+            "boundary_rmse_K": 10.594659112884887,
+            "interior_rmse_K": 8.459802966740689
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 5.264541923254417
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 10.940028702622952,
+            "interior_rmse_K": 7.509077460953013
+          },
+          "fixed": {
+            "boundary_rmse_K": 6.296097783204911,
+            "interior_rmse_K": 6.234249665778048
+          },
+          "spread": {
+            "boundary_rmse_K": 4.296294433070345,
+            "interior_rmse_K": 5.367173944239568
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 4.31104702348596,
+            "interior_rmse_K": 5.304754910403143
+          }
+        },
+        "2": {
+          "native_IR": {
+            "boundary_rmse_K": 10.594659112884887,
+            "interior_rmse_K": 8.459802966740689
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 5.264541923254417
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 11.040769151359951,
+            "interior_rmse_K": 7.507191956133258
+          },
+          "fixed": {
+            "boundary_rmse_K": 6.234533622353693,
+            "interior_rmse_K": 6.304766921255157
+          },
+          "spread": {
+            "boundary_rmse_K": 4.145224231041936,
+            "interior_rmse_K": 5.534388479416789
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 4.67220266890614,
+            "interior_rmse_K": 5.405530497704328
+          }
+        }
+      },
+      "4": {
+        "1": {
+          "native_IR": {
+            "boundary_rmse_K": 10.720262176676213,
+            "interior_rmse_K": 11.111154868870567
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 15.623251251422179
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 4.156047603183764,
+            "interior_rmse_K": 13.553656878884004
+          },
+          "fixed": {
+            "boundary_rmse_K": 7.829102063479653,
+            "interior_rmse_K": 11.723808739593913
+          },
+          "spread": {
+            "boundary_rmse_K": 9.397448637002654,
+            "interior_rmse_K": 11.233510224888143
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 9.894543663164194,
+            "interior_rmse_K": 11.22540924070034
+          }
+        },
+        "2": {
+          "native_IR": {
+            "boundary_rmse_K": 10.720262176676213,
+            "interior_rmse_K": 11.111154868870567
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 15.623251251422179
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 3.8950048919975533,
+            "interior_rmse_K": 13.669915462910373
+          },
+          "fixed": {
+            "boundary_rmse_K": 8.155791226303869,
+            "interior_rmse_K": 11.66151134750894
+          },
+          "spread": {
+            "boundary_rmse_K": 9.754432198062336,
+            "interior_rmse_K": 11.112410798247312
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 10.809073668436104,
+            "interior_rmse_K": 11.148894902650746
+          }
+        },
+        "3": {
+          "native_IR": {
+            "boundary_rmse_K": 10.720262176676213,
+            "interior_rmse_K": 11.111154868870567
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 15.623251251422179
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 4.4054855173921705,
+            "interior_rmse_K": 13.444169515382235
+          },
+          "fixed": {
+            "boundary_rmse_K": 13.936004911985702,
+            "interior_rmse_K": 9.403467804511303
+          },
+          "spread": {
+            "boundary_rmse_K": 13.54431267441897,
+            "interior_rmse_K": 9.607218748650642
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 13.789485217854162,
+            "interior_rmse_K": 9.768645748019019
+          }
+        }
+      },
+      "5": {
+        "1": {
+          "native_IR": {
+            "boundary_rmse_K": 6.586230394295566,
+            "interior_rmse_K": 11.762979072379498
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 12.229105864095486
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 0.4218814212513982,
+            "interior_rmse_K": 12.350713737014324
+          },
+          "fixed": {
+            "boundary_rmse_K": 4.468215792122417,
+            "interior_rmse_K": 10.67724976615345
+          },
+          "spread": {
+            "boundary_rmse_K": 6.482615661271089,
+            "interior_rmse_K": 9.770593080885895
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 7.0214746789593185,
+            "interior_rmse_K": 9.566642922632957
+          }
+        },
+        "2": {
+          "native_IR": {
+            "boundary_rmse_K": 6.586230394295566,
+            "interior_rmse_K": 11.762979072379498
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 12.229105864095486
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 0.5591307960608463,
+            "interior_rmse_K": 12.402076132672134
+          },
+          "fixed": {
+            "boundary_rmse_K": 5.066833907204059,
+            "interior_rmse_K": 10.74346071164618
+          },
+          "spread": {
+            "boundary_rmse_K": 7.027456847199032,
+            "interior_rmse_K": 9.906231244591073
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 7.811280276146119,
+            "interior_rmse_K": 9.689008394194166
+          }
+        },
+        "3": {
+          "native_IR": {
+            "boundary_rmse_K": 6.586230394295566,
+            "interior_rmse_K": 11.762979072379498
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 12.229105864095486
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 0.43538341233471345,
+            "interior_rmse_K": 12.303874104051157
+          },
+          "fixed": {
+            "boundary_rmse_K": 10.944748684033058,
+            "interior_rmse_K": 8.330903494476606
+          },
+          "spread": {
+            "boundary_rmse_K": 10.73755395030334,
+            "interior_rmse_K": 8.734383588871804
+          },
+          "spread_plan_min": [
+            [
+              15,
+              25
+            ],
+            [
+              30,
+              40
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 10.8411513171682,
+            "interior_rmse_K": 8.886211895306744
+          }
+        }
+      },
+      "6": {
+        "7": {
+          "native_IR": {
+            "boundary_rmse_K": 3.148136838854056,
+            "interior_rmse_K": 7.8760123631334125
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 7.124577332905501
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 16.95523707535738,
+            "interior_rmse_K": 13.468201865952159
+          },
+          "fixed": {
+            "boundary_rmse_K": 14.484981888385748,
+            "interior_rmse_K": 13.095866436754381
+          },
+          "spread": {
+            "boundary_rmse_K": 14.691361041303493,
+            "interior_rmse_K": 13.351412033568412
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 17.02707743414338,
+            "interior_rmse_K": 14.131868149822875
+          }
+        },
+        "8": {
+          "native_IR": {
+            "boundary_rmse_K": 3.148136838854056,
+            "interior_rmse_K": 7.8760123631334125
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 7.124577332905501
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 22.048820104121617,
+            "interior_rmse_K": 15.829379450149014
+          },
+          "fixed": {
+            "boundary_rmse_K": 17.11643930284465,
+            "interior_rmse_K": 14.273885760877567
+          },
+          "spread": {
+            "boundary_rmse_K": 18.372416879436823,
+            "interior_rmse_K": 15.265349919199549
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 19.982521638551923,
+            "interior_rmse_K": 15.418942913817581
+          }
+        }
+      },
+      "7": {
+        "6": {
+          "native_IR": {
+            "boundary_rmse_K": 12.85746386515131,
+            "interior_rmse_K": 3.4599050479552287
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 7.4976409364866825
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 13.388732517943584,
+            "interior_rmse_K": 3.4085932946863022
+          },
+          "fixed": {
+            "boundary_rmse_K": 15.129092346785102,
+            "interior_rmse_K": 3.2397423943172305
+          },
+          "spread": {
+            "boundary_rmse_K": 15.135411088899385,
+            "interior_rmse_K": 3.168748343549413
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 15.482787272419955,
+            "interior_rmse_K": 3.132506860720397
+          }
+        },
+        "8": {
+          "native_IR": {
+            "boundary_rmse_K": 12.85746386515131,
+            "interior_rmse_K": 3.4599050479552287
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 7.4976409364866825
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 10.944876182246917,
+            "interior_rmse_K": 9.332989438161606
+          },
+          "fixed": {
+            "boundary_rmse_K": 2.290684619174646,
+            "interior_rmse_K": 7.581945815358463
+          },
+          "spread": {
+            "boundary_rmse_K": 5.11778239682974,
+            "interior_rmse_K": 8.340361682158758
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 5.286252927622192,
+            "interior_rmse_K": 8.35926216233484
+          }
+        }
+      },
+      "8": {
+        "6": {
+          "native_IR": {
+            "boundary_rmse_K": 18.12612000507996,
+            "interior_rmse_K": 5.353582506921636
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 14.056149735068315
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 18.599055320027553,
+            "interior_rmse_K": 5.269724787770762
+          },
+          "fixed": {
+            "boundary_rmse_K": 20.163334051799428,
+            "interior_rmse_K": 5.023126770193967
+          },
+          "spread": {
+            "boundary_rmse_K": 20.207517040953384,
+            "interior_rmse_K": 4.922131298489453
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 20.581266170919232,
+            "interior_rmse_K": 4.838526774603666
+          }
+        },
+        "7": {
+          "native_IR": {
+            "boundary_rmse_K": 18.12612000507996,
+            "interior_rmse_K": 5.353582506921636
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 14.056149735068315
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 12.06976403195579,
+            "interior_rmse_K": 11.014874697059255
+          },
+          "fixed": {
+            "boundary_rmse_K": 8.281836211298913,
+            "interior_rmse_K": 10.375522360080357
+          },
+          "spread": {
+            "boundary_rmse_K": 7.671208090833196,
+            "interior_rmse_K": 10.677740565882067
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 6.707837541218979,
+            "interior_rmse_K": 11.352175887786142
+          }
+        }
+      },
+      "9": {
+        "6": {
+          "native_IR": {
+            "boundary_rmse_K": 3.7825414683433864,
+            "interior_rmse_K": 6.43681606319655
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 6.977988331096944
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 3.718752128455952,
+            "interior_rmse_K": 6.258146566164407
+          },
+          "fixed": {
+            "boundary_rmse_K": 3.8325230073240113,
+            "interior_rmse_K": 5.58748343141615
+          },
+          "spread": {
+            "boundary_rmse_K": 3.9461664665411966,
+            "interior_rmse_K": 5.521886423122052
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 4.5704686842205975,
+            "interior_rmse_K": 5.413806397691783
+          }
+        },
+        "7": {
+          "native_IR": {
+            "boundary_rmse_K": 3.7825414683433864,
+            "interior_rmse_K": 6.43681606319655
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 6.977988331096944
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 15.28985330068958,
+            "interior_rmse_K": 12.040544896997922
+          },
+          "fixed": {
+            "boundary_rmse_K": 11.74019748552295,
+            "interior_rmse_K": 11.521895170232874
+          },
+          "spread": {
+            "boundary_rmse_K": 11.815322516611587,
+            "interior_rmse_K": 11.786008774682006
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 13.460891466580229,
+            "interior_rmse_K": 12.369867790017427
+          }
+        },
+        "8": {
+          "native_IR": {
+            "boundary_rmse_K": 3.7825414683433864,
+            "interior_rmse_K": 6.43681606319655
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 6.977988331096944
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 20.284221476768916,
+            "interior_rmse_K": 14.390774163317456
+          },
+          "fixed": {
+            "boundary_rmse_K": 13.801543574797032,
+            "interior_rmse_K": 12.571148626059244
+          },
+          "spread": {
+            "boundary_rmse_K": 14.877315986182246,
+            "interior_rmse_K": 13.601640963378044
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 15.994905927596637,
+            "interior_rmse_K": 13.635937772051275
+          }
+        }
+      }
+    },
+    "60": {
+      "1": {
+        "2": {
+          "native_IR": {
+            "boundary_rmse_K": 15.306819980899025,
+            "interior_rmse_K": 16.785503989185656
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 9.186959749326284
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 13.889144506968188,
+            "interior_rmse_K": 15.34896254804323
+          },
+          "fixed": {
+            "boundary_rmse_K": 5.537598282931139,
+            "interior_rmse_K": 10.121842181723316
+          },
+          "spread": {
+            "boundary_rmse_K": 4.232336342339768,
+            "interior_rmse_K": 9.149414205486096
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 9.688171546964899,
+            "interior_rmse_K": 10.17885669989371
+          }
+        },
+        "3": {
+          "native_IR": {
+            "boundary_rmse_K": 15.306819980899025,
+            "interior_rmse_K": 16.785503989185656
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 9.186959749326284
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 13.679196248129712,
+            "interior_rmse_K": 15.084872190732879
+          },
+          "fixed": {
+            "boundary_rmse_K": 4.236390057704378,
+            "interior_rmse_K": 9.62788985537282
+          },
+          "spread": {
+            "boundary_rmse_K": 7.7981284374894715,
+            "interior_rmse_K": 7.596245580224086
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 11.815585673277406,
+            "interior_rmse_K": 9.618378277014962
+          }
+        }
+      },
+      "2": {
+        "1": {
+          "native_IR": {
+            "boundary_rmse_K": 16.077377200401997,
+            "interior_rmse_K": 11.494026918430077
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 5.5908149898435475
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 14.572920410472653,
+            "interior_rmse_K": 10.24641622313886
+          },
+          "fixed": {
+            "boundary_rmse_K": 5.148979855607467,
+            "interior_rmse_K": 5.474106995349092
+          },
+          "spread": {
+            "boundary_rmse_K": 4.659858814562043,
+            "interior_rmse_K": 5.457187545991588
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 8.09478620143892,
+            "interior_rmse_K": 6.172801557697573
+          }
+        },
+        "3": {
+          "native_IR": {
+            "boundary_rmse_K": 16.077377200401997,
+            "interior_rmse_K": 11.494026918430077
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 5.5908149898435475
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 14.452187938677383,
+            "interior_rmse_K": 10.131647762168132
+          },
+          "fixed": {
+            "boundary_rmse_K": 4.9970384350058055,
+            "interior_rmse_K": 5.371530411833277
+          },
+          "spread": {
+            "boundary_rmse_K": 8.227144463587683,
+            "interior_rmse_K": 4.444458015585235
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 12.067639799843484,
+            "interior_rmse_K": 7.760818549316064
+          }
+        }
+      },
+      "3": {
+        "1": {
+          "native_IR": {
+            "boundary_rmse_K": 19.721181150721808,
+            "interior_rmse_K": 10.006841404315155
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 5.264541923254417
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 18.218162786578574,
+            "interior_rmse_K": 9.333175349415024
+          },
+          "fixed": {
+            "boundary_rmse_K": 7.648406009783899,
+            "interior_rmse_K": 4.733240468045542
+          },
+          "spread": {
+            "boundary_rmse_K": 7.221518276831125,
+            "interior_rmse_K": 5.268902273046998
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 9.704031315742808,
+            "interior_rmse_K": 5.763079784908134
+          }
+        },
+        "2": {
+          "native_IR": {
+            "boundary_rmse_K": 19.721181150721808,
+            "interior_rmse_K": 10.006841404315155
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 5.264541923254417
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 18.313935194001616,
+            "interior_rmse_K": 9.372398749679544
+          },
+          "fixed": {
+            "boundary_rmse_K": 8.102532640023481,
+            "interior_rmse_K": 4.402159167672557
+          },
+          "spread": {
+            "boundary_rmse_K": 7.1179737441568,
+            "interior_rmse_K": 4.903188310069843
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 11.141734566558663,
+            "interior_rmse_K": 6.119820247198947
+          }
+        }
+      },
+      "4": {
+        "1": {
+          "native_IR": {
+            "boundary_rmse_K": 6.035248186023483,
+            "interior_rmse_K": 17.99322309446521
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 15.623251251422179
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 5.749645942136903,
+            "interior_rmse_K": 16.437685628937803
+          },
+          "fixed": {
+            "boundary_rmse_K": 9.71724708776322,
+            "interior_rmse_K": 11.494407807057536
+          },
+          "spread": {
+            "boundary_rmse_K": 9.790239624351225,
+            "interior_rmse_K": 10.960389903731512
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 10.638892640688397,
+            "interior_rmse_K": 11.42133746730876
+          }
+        },
+        "2": {
+          "native_IR": {
+            "boundary_rmse_K": 6.035248186023483,
+            "interior_rmse_K": 17.99322309446521
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 15.623251251422179
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 5.703309894186462,
+            "interior_rmse_K": 16.550929039618858
+          },
+          "fixed": {
+            "boundary_rmse_K": 10.47355849864969,
+            "interior_rmse_K": 11.651711192771787
+          },
+          "spread": {
+            "boundary_rmse_K": 10.544904687725976,
+            "interior_rmse_K": 10.806689454404683
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 12.141279863914955,
+            "interior_rmse_K": 11.547026569372026
+          }
+        },
+        "3": {
+          "native_IR": {
+            "boundary_rmse_K": 6.035248186023483,
+            "interior_rmse_K": 17.99322309446521
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 15.623251251422179
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 5.831349737764816,
+            "interior_rmse_K": 16.281418482075775
+          },
+          "fixed": {
+            "boundary_rmse_K": 9.920694618218072,
+            "interior_rmse_K": 11.250314649386045
+          },
+          "spread": {
+            "boundary_rmse_K": 15.021191282817046,
+            "interior_rmse_K": 9.25141163819884
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 16.845168091831386,
+            "interior_rmse_K": 10.877595537109617
+          }
+        }
+      },
+      "5": {
+        "1": {
+          "native_IR": {
+            "boundary_rmse_K": 9.322605316640486,
+            "interior_rmse_K": 15.628472382330937
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 12.229105864095486
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 7.321997221980383,
+            "interior_rmse_K": 14.587348727137858
+          },
+          "fixed": {
+            "boundary_rmse_K": 7.445068572151554,
+            "interior_rmse_K": 9.366647225706165
+          },
+          "spread": {
+            "boundary_rmse_K": 6.508291512477236,
+            "interior_rmse_K": 9.564436894958659
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 8.017452427365948,
+            "interior_rmse_K": 9.559212186428688
+          }
+        },
+        "2": {
+          "native_IR": {
+            "boundary_rmse_K": 9.322605316640486,
+            "interior_rmse_K": 15.628472382330937
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 12.229105864095486
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 7.438335207256606,
+            "interior_rmse_K": 14.65829516449301
+          },
+          "fixed": {
+            "boundary_rmse_K": 8.676394271562659,
+            "interior_rmse_K": 9.10341326665221
+          },
+          "spread": {
+            "boundary_rmse_K": 7.5144533758591425,
+            "interior_rmse_K": 9.179071927415773
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 9.404387868386433,
+            "interior_rmse_K": 9.275396729345452
+          }
+        },
+        "3": {
+          "native_IR": {
+            "boundary_rmse_K": 9.322605316640486,
+            "interior_rmse_K": 15.628472382330937
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 12.229105864095486
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 7.172262833941891,
+            "interior_rmse_K": 14.490769745674223
+          },
+          "fixed": {
+            "boundary_rmse_K": 7.33680134228215,
+            "interior_rmse_K": 9.31714364795552
+          },
+          "spread": {
+            "boundary_rmse_K": 11.861206999427454,
+            "interior_rmse_K": 7.736605777113542
+          },
+          "spread_plan_min": [
+            [
+              20,
+              30
+            ],
+            [
+              35,
+              45
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 13.218824726042724,
+            "interior_rmse_K": 9.30816669527197
+          }
+        }
+      },
+      "6": {
+        "7": {
+          "native_IR": {
+            "boundary_rmse_K": 33.112275061787976,
+            "interior_rmse_K": 20.940936314591408
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 7.124577332905501
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 27.968993189583404,
+            "interior_rmse_K": 17.942971396090332
+          },
+          "fixed": {
+            "boundary_rmse_K": 24.73167947719494,
+            "interior_rmse_K": 17.844976603196628
+          },
+          "spread": {
+            "boundary_rmse_K": 20.903453119060128,
+            "interior_rmse_K": 15.249593600307886
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 24.138030594984457,
+            "interior_rmse_K": 17.552756857300153
+          }
+        },
+        "8": {
+          "native_IR": {
+            "boundary_rmse_K": 33.112275061787976,
+            "interior_rmse_K": 20.940936314591408
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 7.124577332905501
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 29.221901277788145,
+            "interior_rmse_K": 18.80512475242453
+          },
+          "fixed": {
+            "boundary_rmse_K": 28.482814772511887,
+            "interior_rmse_K": 19.607250566352842
+          },
+          "spread": {
+            "boundary_rmse_K": 24.814192915979174,
+            "interior_rmse_K": 17.32475809305562
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 24.188657215007105,
+            "interior_rmse_K": 17.262613124469407
+          }
+        }
+      },
+      "7": {
+        "6": {
+          "native_IR": {
+            "boundary_rmse_K": 24.45578274647181,
+            "interior_rmse_K": 14.20623671875898
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 7.4976409364866825
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 31.618379211827616,
+            "interior_rmse_K": 13.333966197970396
+          },
+          "fixed": {
+            "boundary_rmse_K": 12.913410240250668,
+            "interior_rmse_K": 8.777977321882386
+          },
+          "spread": {
+            "boundary_rmse_K": 10.819120813920291,
+            "interior_rmse_K": 6.779066642772229
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 12.90758255783226,
+            "interior_rmse_K": 7.190464862323784
+          }
+        },
+        "8": {
+          "native_IR": {
+            "boundary_rmse_K": 24.45578274647181,
+            "interior_rmse_K": 14.20623671875898
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 7.4976409364866825
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 24.37204264934704,
+            "interior_rmse_K": 13.00252965661164
+          },
+          "fixed": {
+            "boundary_rmse_K": 17.835948452946596,
+            "interior_rmse_K": 13.09313536989966
+          },
+          "spread": {
+            "boundary_rmse_K": 14.242925276808677,
+            "interior_rmse_K": 11.636839584017894
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 13.685641675777802,
+            "interior_rmse_K": 11.465081629900332
+          }
+        }
+      },
+      "8": {
+        "6": {
+          "native_IR": {
+            "boundary_rmse_K": 18.281294125563996,
+            "interior_rmse_K": 21.041719959535556
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 14.056149735068315
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 29.654804680162997,
+            "interior_rmse_K": 19.702102504798507
+          },
+          "fixed": {
+            "boundary_rmse_K": 11.628781445593905,
+            "interior_rmse_K": 13.046784798402786
+          },
+          "spread": {
+            "boundary_rmse_K": 13.622874734839577,
+            "interior_rmse_K": 9.706040314912785
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 13.478866804696843,
+            "interior_rmse_K": 10.65869893066936
+          }
+        },
+        "7": {
+          "native_IR": {
+            "boundary_rmse_K": 18.281294125563996,
+            "interior_rmse_K": 21.041719959535556
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 14.056149735068315
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 22.046990898728154,
+            "interior_rmse_K": 18.91041075091919
+          },
+          "fixed": {
+            "boundary_rmse_K": 8.93026737938284,
+            "interior_rmse_K": 17.448419487058924
+          },
+          "spread": {
+            "boundary_rmse_K": 8.773726572523708,
+            "interior_rmse_K": 14.723411011795136
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 9.81006424864131,
+            "interior_rmse_K": 17.126395676945926
+          }
+        }
+      },
+      "9": {
+        "6": {
+          "native_IR": {
+            "boundary_rmse_K": 28.427832607368394,
+            "interior_rmse_K": 18.523990608295318
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 6.977988331096944
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 25.7561416872043,
+            "interior_rmse_K": 15.54553127540234
+          },
+          "fixed": {
+            "boundary_rmse_K": 11.916541464364649,
+            "interior_rmse_K": 11.32053258186391
+          },
+          "spread": {
+            "boundary_rmse_K": 12.164349860009887,
+            "interior_rmse_K": 8.476911926743064
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 11.902813203698926,
+            "interior_rmse_K": 9.397469179560222
+          }
+        },
+        "7": {
+          "native_IR": {
+            "boundary_rmse_K": 28.427832607368394,
+            "interior_rmse_K": 18.523990608295318
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 6.977988331096944
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 23.875214903387253,
+            "interior_rmse_K": 15.701323873372933
+          },
+          "fixed": {
+            "boundary_rmse_K": 21.12550907658892,
+            "interior_rmse_K": 15.990385598891734
+          },
+          "spread": {
+            "boundary_rmse_K": 18.044035603631727,
+            "interior_rmse_K": 13.408080464339191
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 20.57747110762177,
+            "interior_rmse_K": 15.721622186875681
+          }
+        },
+        "8": {
+          "native_IR": {
+            "boundary_rmse_K": 28.427832607368394,
+            "interior_rmse_K": 18.523990608295318
+          },
+          "contact_boundary": {
+            "boundary_rmse_K": 0.0,
+            "interior_rmse_K": 6.977988331096944
+          },
+          "fixed_offset_only": {
+            "boundary_rmse_K": 24.753653766877306,
+            "interior_rmse_K": 16.470114648667924
+          },
+          "fixed": {
+            "boundary_rmse_K": 24.66250166905877,
+            "interior_rmse_K": 17.622412487404883
+          },
+          "spread": {
+            "boundary_rmse_K": 21.405885035267808,
+            "interior_rmse_K": 15.341040444148744
+          },
+          "spread_plan_min": [
+            [
+              10,
+              20
+            ],
+            [
+              15,
+              25
+            ]
+          ],
+          "random_median": {
+            "boundary_rmse_K": 20.872601856740896,
+            "interior_rmse_K": 15.453340608768595
+          }
+        }
+      }
+    }
+  }
+}
