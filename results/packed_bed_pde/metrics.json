@@ -1,0 +1,1179 @@
+{
+  "source_doi": "10.17632/3pp86gdvh4.2",
+  "area": {
+    "1": {
+      "training_runs": [
+        2,
+        3
+      ],
+      "shutoff_min": 211.2348167,
+      "flow_Nm3_h": 15.00677615,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0004628138305225182
+          ],
+          "rmse_K": 8.889155411739164,
+          "boundary_conditioned_rollout_rmse_K": 32.8668251553165
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.00046281383052251823
+          ],
+          "rmse_K": 8.889155411739164,
+          "boundary_conditioned_rollout_rmse_K": 32.86682515531649
+        },
+        "advection + cooling": {
+          "coefficients": [
+            7.511722719223382e-05,
+            6.368173330105055e-06
+          ],
+          "rmse_K": 2.5597164474830496,
+          "boundary_conditioned_rollout_rmse_K": 28.706242418842727
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            2.8564584683393606e-07,
+            7.474675429825143e-05,
+            0.0
+          ],
+          "rmse_K": 1.6663483525244527,
+          "boundary_conditioned_rollout_rmse_K": 9.950334490645666
+        }
+      }
+    },
+    "2": {
+      "training_runs": [
+        1,
+        3
+      ],
+      "shutoff_min": 211.2505,
+      "flow_Nm3_h": 15.00677615,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0004555801875046178
+          ],
+          "rmse_K": 9.116781780391953,
+          "boundary_conditioned_rollout_rmse_K": 35.65558149924793
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0004555801875046178
+          ],
+          "rmse_K": 9.116781780391953,
+          "boundary_conditioned_rollout_rmse_K": 35.65558149924793
+        },
+        "advection + cooling": {
+          "coefficients": [
+            7.342262847998565e-05,
+            9.094574674100839e-06
+          ],
+          "rmse_K": 2.6924143321290455,
+          "boundary_conditioned_rollout_rmse_K": 24.290320801667185
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            2.892869868559124e-07,
+            7.316066701992651e-05,
+            0.0
+          ],
+          "rmse_K": 1.7713928931913347,
+          "boundary_conditioned_rollout_rmse_K": 5.419694870456858
+        }
+      }
+    },
+    "3": {
+      "training_runs": [
+        1,
+        2
+      ],
+      "shutoff_min": 211.2511333,
+      "flow_Nm3_h": 15.00677615,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0004495695051627609
+          ],
+          "rmse_K": 9.153347627222198,
+          "boundary_conditioned_rollout_rmse_K": 35.295173010722515
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.00044956950516276094
+          ],
+          "rmse_K": 9.153347627222198,
+          "boundary_conditioned_rollout_rmse_K": 35.295173010722486
+        },
+        "advection + cooling": {
+          "coefficients": [
+            7.29994178674488e-05,
+            1.3068953583489311e-05
+          ],
+          "rmse_K": 2.170022968472404,
+          "boundary_conditioned_rollout_rmse_K": 17.273831772713987
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            3.179742982432801e-07,
+            7.294492634265362e-05,
+            0.0
+          ],
+          "rmse_K": 1.5714080620028403,
+          "boundary_conditioned_rollout_rmse_K": 3.928759202888916
+        }
+      }
+    },
+    "4": {
+      "training_runs": [
+        1,
+        2,
+        3
+      ],
+      "shutoff_min": 85.11028333,
+      "flow_Nm3_h": 15.00677615,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.00045589618015318904
+          ],
+          "rmse_K": 9.102591723902039,
+          "boundary_conditioned_rollout_rmse_K": 37.08785205662081
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.00045589618015318893
+          ],
+          "rmse_K": 9.102591723902039,
+          "boundary_conditioned_rollout_rmse_K": 37.08785205662077
+        },
+        "advection + cooling": {
+          "coefficients": [
+            7.384224160279672e-05,
+            9.525605304985208e-06
+          ],
+          "rmse_K": 4.065142059376069,
+          "boundary_conditioned_rollout_rmse_K": 45.1210822673155
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            2.974497743849556e-07,
+            7.361898247835102e-05,
+            0.0
+          ],
+          "rmse_K": 2.635110805118205,
+          "boundary_conditioned_rollout_rmse_K": 15.282737284259895
+        }
+      }
+    },
+    "5": {
+      "training_runs": [
+        1,
+        2,
+        3
+      ],
+      "shutoff_min": 85.80376667,
+      "flow_Nm3_h": 15.01553605,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.00045589618015318904
+          ],
+          "rmse_K": 9.699904111004525,
+          "boundary_conditioned_rollout_rmse_K": 38.55448282214486
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.00045589618015318893
+          ],
+          "rmse_K": 9.699904111004525,
+          "boundary_conditioned_rollout_rmse_K": 38.55448282214481
+        },
+        "advection + cooling": {
+          "coefficients": [
+            7.384224160279672e-05,
+            9.525605304985208e-06
+          ],
+          "rmse_K": 3.9800767946661773,
+          "boundary_conditioned_rollout_rmse_K": 46.790763833487865
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            2.974497743849556e-07,
+            7.361898247835102e-05,
+            0.0
+          ],
+          "rmse_K": 2.2364124758832875,
+          "boundary_conditioned_rollout_rmse_K": 12.811899176411991
+        }
+      }
+    },
+    "6": {
+      "training_runs": [
+        7,
+        8
+      ],
+      "shutoff_min": 86.98776667,
+      "flow_Nm3_h": 38.01465164,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.002197475401219297
+          ],
+          "rmse_K": 20.435421175531204,
+          "boundary_conditioned_rollout_rmse_K": 42.14812074892664
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0021974754012192965
+          ],
+          "rmse_K": 20.435421175531204,
+          "boundary_conditioned_rollout_rmse_K": 42.14812074892663
+        },
+        "advection + cooling": {
+          "coefficients": [
+            0.00018115911329107242,
+            0.0
+          ],
+          "rmse_K": 9.164910129459765,
+          "boundary_conditioned_rollout_rmse_K": 30.814625663815292
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            1.0355988146363403e-06,
+            0.00019792295521430656,
+            0.0
+          ],
+          "rmse_K": 7.050766438942335,
+          "boundary_conditioned_rollout_rmse_K": 8.067217113072982
+        }
+      }
+    },
+    "7": {
+      "training_runs": [
+        6,
+        8
+      ],
+      "shutoff_min": 88.2158,
+      "flow_Nm3_h": 38.01465164,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0023045326855893884
+          ],
+          "rmse_K": 21.696710735653717,
+          "boundary_conditioned_rollout_rmse_K": 45.46936532221813
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.002304532685589388
+          ],
+          "rmse_K": 21.696710735653717,
+          "boundary_conditioned_rollout_rmse_K": 45.46936532221813
+        },
+        "advection + cooling": {
+          "coefficients": [
+            0.0001808470192655202,
+            9.709920543390607e-05
+          ],
+          "rmse_K": 9.25953303331761,
+          "boundary_conditioned_rollout_rmse_K": 42.48855793206981
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            1.3045806687757864e-06,
+            0.0002078504873124682,
+            0.0
+          ],
+          "rmse_K": 8.723528388950065,
+          "boundary_conditioned_rollout_rmse_K": 8.174664765124142
+        }
+      }
+    },
+    "8": {
+      "training_runs": [
+        6,
+        7
+      ],
+      "shutoff_min": 83.67603333,
+      "flow_Nm3_h": 38.01465164,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0021679597860250793
+          ],
+          "rmse_K": 20.550863522400256,
+          "boundary_conditioned_rollout_rmse_K": 39.185423321720215
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0021679597860250793
+          ],
+          "rmse_K": 20.550863522400256,
+          "boundary_conditioned_rollout_rmse_K": 39.185423321720215
+        },
+        "advection + cooling": {
+          "coefficients": [
+            0.000189213575450408,
+            0.0
+          ],
+          "rmse_K": 10.74225181067665,
+          "boundary_conditioned_rollout_rmse_K": 60.53889434168356
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            9.316828193365241e-07,
+            0.00020282160904521333,
+            0.0
+          ],
+          "rmse_K": 7.886768101719532,
+          "boundary_conditioned_rollout_rmse_K": 11.394251695794974
+        }
+      }
+    },
+    "9": {
+      "training_runs": [
+        6,
+        7,
+        8
+      ],
+      "shutoff_min": 140.31995,
+      "flow_Nm3_h": 38.01465164,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0022217065339902357
+          ],
+          "rmse_K": 19.12298078806105,
+          "boundary_conditioned_rollout_rmse_K": 34.81214152862669
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0022217065339902352
+          ],
+          "rmse_K": 19.122980788061053,
+          "boundary_conditioned_rollout_rmse_K": 34.81214152862669
+        },
+        "advection + cooling": {
+          "coefficients": [
+            0.00018547761299883287,
+            0.0
+          ],
+          "rmse_K": 8.193640660548946,
+          "boundary_conditioned_rollout_rmse_K": 36.98793663592485
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            1.0859621392299566e-06,
+            0.0002026052181959913,
+            0.0
+          ],
+          "rmse_K": 5.904740749068864,
+          "boundary_conditioned_rollout_rmse_K": 6.331820053669782
+        }
+      }
+    }
+  },
+  "near_axis": {
+    "1": {
+      "training_runs": [
+        2,
+        3
+      ],
+      "shutoff_min": 211.2348167,
+      "flow_Nm3_h": 15.00677615,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0006850973652598237
+          ],
+          "rmse_K": 15.118222300506156,
+          "boundary_conditioned_rollout_rmse_K": 61.667396331536956
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0006850973652598234
+          ],
+          "rmse_K": 15.118222300506154,
+          "boundary_conditioned_rollout_rmse_K": 61.667396331537006
+        },
+        "advection + cooling": {
+          "coefficients": [
+            7.538440444144753e-05,
+            2.364881882396124e-05
+          ],
+          "rmse_K": 3.9769894854544106,
+          "boundary_conditioned_rollout_rmse_K": 15.635490080991536
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            1.38831989436029e-07,
+            7.67783076927323e-05,
+            0.0
+          ],
+          "rmse_K": 3.645652509020503,
+          "boundary_conditioned_rollout_rmse_K": 10.982479822387152
+        }
+      }
+    },
+    "2": {
+      "training_runs": [
+        1,
+        3
+      ],
+      "shutoff_min": 211.2505,
+      "flow_Nm3_h": 15.00677615,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.000706870873508509
+          ],
+          "rmse_K": 15.077547525555389,
+          "boundary_conditioned_rollout_rmse_K": 61.45420022369025
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0007068708735085091
+          ],
+          "rmse_K": 15.077547525555389,
+          "boundary_conditioned_rollout_rmse_K": 61.454200223690314
+        },
+        "advection + cooling": {
+          "coefficients": [
+            7.761745598581908e-05,
+            2.7312104389138798e-05
+          ],
+          "rmse_K": 5.516266682822086,
+          "boundary_conditioned_rollout_rmse_K": 33.60527375180879
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            1.7185449664935713e-07,
+            7.951176673241292e-05,
+            0.0
+          ],
+          "rmse_K": 5.415606600372461,
+          "boundary_conditioned_rollout_rmse_K": 25.03520367957856
+        }
+      }
+    },
+    "3": {
+      "training_runs": [
+        1,
+        2
+      ],
+      "shutoff_min": 211.2511333,
+      "flow_Nm3_h": 15.00677615,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0006641150323364744
+          ],
+          "rmse_K": 15.756151903797715,
+          "boundary_conditioned_rollout_rmse_K": 72.13569741159947
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0006641150323364745
+          ],
+          "rmse_K": 15.756151903797715,
+          "boundary_conditioned_rollout_rmse_K": 72.13569741159954
+        },
+        "advection + cooling": {
+          "coefficients": [
+            7.195023010221904e-05,
+            2.8534591162569026e-05
+          ],
+          "rmse_K": 6.650146469671111,
+          "boundary_conditioned_rollout_rmse_K": 69.06113844009127
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            1.5103452512158766e-07,
+            7.395547807958863e-05,
+            0.0
+          ],
+          "rmse_K": 6.4470817240308484,
+          "boundary_conditioned_rollout_rmse_K": 42.25723067558394
+        }
+      }
+    },
+    "4": {
+      "training_runs": [
+        1,
+        2,
+        3
+      ],
+      "shutoff_min": 85.11028333,
+      "flow_Nm3_h": 15.00677615,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0006847935329251254
+          ],
+          "rmse_K": 15.35003232697089,
+          "boundary_conditioned_rollout_rmse_K": 65.3975359882948
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0006847935329251255
+          ],
+          "rmse_K": 15.350032326970888,
+          "boundary_conditioned_rollout_rmse_K": 65.39753598829479
+        },
+        "advection + cooling": {
+          "coefficients": [
+            7.483648116359943e-05,
+            2.706869826041252e-05
+          ],
+          "rmse_K": 5.685547789489475,
+          "boundary_conditioned_rollout_rmse_K": 46.06171935512596
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            1.5357482393965202e-07,
+            7.663541245737931e-05,
+            0.0
+          ],
+          "rmse_K": 4.587353476255991,
+          "boundary_conditioned_rollout_rmse_K": 26.0483191461133
+        }
+      }
+    },
+    "5": {
+      "training_runs": [
+        1,
+        2,
+        3
+      ],
+      "shutoff_min": 85.80376667,
+      "flow_Nm3_h": 15.01553605,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0006847935329251254
+          ],
+          "rmse_K": 13.862823566365527,
+          "boundary_conditioned_rollout_rmse_K": 53.18818426807629
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0006847935329251255
+          ],
+          "rmse_K": 13.86282356636553,
+          "boundary_conditioned_rollout_rmse_K": 53.18818426807633
+        },
+        "advection + cooling": {
+          "coefficients": [
+            7.483648116359943e-05,
+            2.706869826041252e-05
+          ],
+          "rmse_K": 4.943279282331891,
+          "boundary_conditioned_rollout_rmse_K": 41.354950684036424
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            1.5357482393965202e-07,
+            7.663541245737931e-05,
+            0.0
+          ],
+          "rmse_K": 4.5604733825911055,
+          "boundary_conditioned_rollout_rmse_K": 25.88678375723025
+        }
+      }
+    },
+    "6": {
+      "training_runs": [
+        7,
+        8
+      ],
+      "shutoff_min": 86.98776667,
+      "flow_Nm3_h": 38.01465164,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0032422277646067497
+          ],
+          "rmse_K": 26.510771633331775,
+          "boundary_conditioned_rollout_rmse_K": 30.405752458355828
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0032422277646067506
+          ],
+          "rmse_K": 26.510771633331778,
+          "boundary_conditioned_rollout_rmse_K": 30.405752458355835
+        },
+        "advection + cooling": {
+          "coefficients": [
+            0.00018747584556894913,
+            0.0
+          ],
+          "rmse_K": 7.7836400291220595,
+          "boundary_conditioned_rollout_rmse_K": 55.9700438245545
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            2.4655942874075593e-07,
+            0.00018901120249219093,
+            0.0
+          ],
+          "rmse_K": 7.106309819828855,
+          "boundary_conditioned_rollout_rmse_K": 24.029637314832506
+        }
+      }
+    },
+    "7": {
+      "training_runs": [
+        6,
+        8
+      ],
+      "shutoff_min": 88.2158,
+      "flow_Nm3_h": 38.01465164,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0030765089434209086
+          ],
+          "rmse_K": 27.056429705598585,
+          "boundary_conditioned_rollout_rmse_K": 31.32633635391022
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0030765089434209077
+          ],
+          "rmse_K": 27.056429705598585,
+          "boundary_conditioned_rollout_rmse_K": 31.326336353910232
+        },
+        "advection + cooling": {
+          "coefficients": [
+            0.00018234748198766844,
+            0.0
+          ],
+          "rmse_K": 9.982407147488255,
+          "boundary_conditioned_rollout_rmse_K": 26.27266358874996
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            3.6264107583090804e-07,
+            0.0001845699345946063,
+            0.0
+          ],
+          "rmse_K": 9.915420724704964,
+          "boundary_conditioned_rollout_rmse_K": 9.375845128623604
+        }
+      }
+    },
+    "8": {
+      "training_runs": [
+        6,
+        7
+      ],
+      "shutoff_min": 83.67603333,
+      "flow_Nm3_h": 38.01465164,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.002992561797575145
+          ],
+          "rmse_K": 26.64073865735991,
+          "boundary_conditioned_rollout_rmse_K": 31.887656266499995
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0029925617975751447
+          ],
+          "rmse_K": 26.640738657359915,
+          "boundary_conditioned_rollout_rmse_K": 31.887656266500016
+        },
+        "advection + cooling": {
+          "coefficients": [
+            0.0001822682857649585,
+            0.0
+          ],
+          "rmse_K": 9.375885241800171,
+          "boundary_conditioned_rollout_rmse_K": 30.174383519168643
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            3.180745726028626e-07,
+            0.00018400033244577176,
+            0.0
+          ],
+          "rmse_K": 9.065222520093657,
+          "boundary_conditioned_rollout_rmse_K": 10.039809781698489
+        }
+      }
+    },
+    "9": {
+      "training_runs": [
+        6,
+        7,
+        8
+      ],
+      "shutoff_min": 140.31995,
+      "flow_Nm3_h": 38.01465164,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0030970497337377786
+          ],
+          "rmse_K": 20.939247922929344,
+          "boundary_conditioned_rollout_rmse_K": 24.125518561154333
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0030970497337377786
+          ],
+          "rmse_K": 20.939247922929344,
+          "boundary_conditioned_rollout_rmse_K": 24.125518561154333
+        },
+        "advection + cooling": {
+          "coefficients": [
+            0.00018396515089229857,
+            0.0
+          ],
+          "rmse_K": 7.664786953162432,
+          "boundary_conditioned_rollout_rmse_K": 40.36227498966407
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            3.07225153240404e-07,
+            0.0001857862581164198,
+            0.0
+          ],
+          "rmse_K": 7.381230824922891,
+          "boundary_conditioned_rollout_rmse_K": 22.14216259191975
+        }
+      }
+    }
+  },
+  "area_upwind": {
+    "1": {
+      "training_runs": [
+        2,
+        3
+      ],
+      "shutoff_min": 211.2348167,
+      "flow_Nm3_h": 15.00677615,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0004628138305225182
+          ],
+          "rmse_K": 8.889155411739164,
+          "boundary_conditioned_rollout_rmse_K": 32.8668251553165
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.00046281383052251823
+          ],
+          "rmse_K": 8.889155411739164,
+          "boundary_conditioned_rollout_rmse_K": 32.86682515531649
+        },
+        "advection + cooling": {
+          "coefficients": [
+            6.706357380532635e-05,
+            0.0
+          ],
+          "rmse_K": 3.430404755480334,
+          "boundary_conditioned_rollout_rmse_K": 8.425144696538304
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            0.0,
+            6.706357380532635e-05,
+            0.0
+          ],
+          "rmse_K": 3.430404755480334,
+          "boundary_conditioned_rollout_rmse_K": 8.425144696538304
+        }
+      }
+    },
+    "2": {
+      "training_runs": [
+        1,
+        3
+      ],
+      "shutoff_min": 211.2505,
+      "flow_Nm3_h": 15.00677615,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0004555801875046178
+          ],
+          "rmse_K": 9.116781780391953,
+          "boundary_conditioned_rollout_rmse_K": 35.65558149924793
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0004555801875046178
+          ],
+          "rmse_K": 9.116781780391953,
+          "boundary_conditioned_rollout_rmse_K": 35.65558149924793
+        },
+        "advection + cooling": {
+          "coefficients": [
+            6.60679133035962e-05,
+            0.0
+          ],
+          "rmse_K": 4.017063346060677,
+          "boundary_conditioned_rollout_rmse_K": 10.204933677661101
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            0.0,
+            6.60679133035962e-05,
+            0.0
+          ],
+          "rmse_K": 4.017063346060677,
+          "boundary_conditioned_rollout_rmse_K": 10.204933677661101
+        }
+      }
+    },
+    "3": {
+      "training_runs": [
+        1,
+        2
+      ],
+      "shutoff_min": 211.2511333,
+      "flow_Nm3_h": 15.00677615,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0004495695051627609
+          ],
+          "rmse_K": 9.153347627222198,
+          "boundary_conditioned_rollout_rmse_K": 35.295173010722515
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.00044956950516276094
+          ],
+          "rmse_K": 9.153347627222198,
+          "boundary_conditioned_rollout_rmse_K": 35.295173010722486
+        },
+        "advection + cooling": {
+          "coefficients": [
+            6.540456401261855e-05,
+            0.0
+          ],
+          "rmse_K": 4.081013782082229,
+          "boundary_conditioned_rollout_rmse_K": 11.561280726350635
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            0.0,
+            6.540456401261855e-05,
+            0.0
+          ],
+          "rmse_K": 4.081013782082229,
+          "boundary_conditioned_rollout_rmse_K": 11.561280726350635
+        }
+      }
+    },
+    "4": {
+      "training_runs": [
+        1,
+        2,
+        3
+      ],
+      "shutoff_min": 85.11028333,
+      "flow_Nm3_h": 15.00677615,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.00045589618015318904
+          ],
+          "rmse_K": 9.102591723902039,
+          "boundary_conditioned_rollout_rmse_K": 37.08785205662081
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.00045589618015318893
+          ],
+          "rmse_K": 9.102591723902039,
+          "boundary_conditioned_rollout_rmse_K": 37.08785205662077
+        },
+        "advection + cooling": {
+          "coefficients": [
+            6.616813178017277e-05,
+            0.0
+          ],
+          "rmse_K": 3.471417642501736,
+          "boundary_conditioned_rollout_rmse_K": 7.547588775796285
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            0.0,
+            6.616813178017277e-05,
+            0.0
+          ],
+          "rmse_K": 3.471417642501736,
+          "boundary_conditioned_rollout_rmse_K": 7.547588775796285
+        }
+      }
+    },
+    "5": {
+      "training_runs": [
+        1,
+        2,
+        3
+      ],
+      "shutoff_min": 85.80376667,
+      "flow_Nm3_h": 15.01553605,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.00045589618015318904
+          ],
+          "rmse_K": 9.699904111004525,
+          "boundary_conditioned_rollout_rmse_K": 38.55448282214486
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.00045589618015318893
+          ],
+          "rmse_K": 9.699904111004525,
+          "boundary_conditioned_rollout_rmse_K": 38.55448282214481
+        },
+        "advection + cooling": {
+          "coefficients": [
+            6.616813178017277e-05,
+            0.0
+          ],
+          "rmse_K": 2.8777369772305597,
+          "boundary_conditioned_rollout_rmse_K": 7.798341133625926
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            0.0,
+            6.616813178017277e-05,
+            0.0
+          ],
+          "rmse_K": 2.8777369772305597,
+          "boundary_conditioned_rollout_rmse_K": 7.798341133625926
+        }
+      }
+    },
+    "6": {
+      "training_runs": [
+        7,
+        8
+      ],
+      "shutoff_min": 86.98776667,
+      "flow_Nm3_h": 38.01465164,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.002197475401219297
+          ],
+          "rmse_K": 20.435421175531204,
+          "boundary_conditioned_rollout_rmse_K": 42.14812074892664
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0021974754012192965
+          ],
+          "rmse_K": 20.435421175531204,
+          "boundary_conditioned_rollout_rmse_K": 42.14812074892663
+        },
+        "advection + cooling": {
+          "coefficients": [
+            0.0001935523544836289,
+            4.841190255930625e-05
+          ],
+          "rmse_K": 10.8594249612842,
+          "boundary_conditioned_rollout_rmse_K": 11.37649646671003
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            0.0,
+            0.0001935523544836289,
+            4.841190255930575e-05
+          ],
+          "rmse_K": 10.859424961284205,
+          "boundary_conditioned_rollout_rmse_K": 11.376479045416337
+        }
+      }
+    },
+    "7": {
+      "training_runs": [
+        6,
+        8
+      ],
+      "shutoff_min": 88.2158,
+      "flow_Nm3_h": 38.01465164,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0023045326855893884
+          ],
+          "rmse_K": 21.696710735653717,
+          "boundary_conditioned_rollout_rmse_K": 45.46936532221813
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.002304532685589388
+          ],
+          "rmse_K": 21.696710735653717,
+          "boundary_conditioned_rollout_rmse_K": 45.46936532221813
+        },
+        "advection + cooling": {
+          "coefficients": [
+            0.00020412545559968552,
+            9.727894773880822e-05
+          ],
+          "rmse_K": 14.097776202122581,
+          "boundary_conditioned_rollout_rmse_K": 9.126721960718353
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            0.0,
+            0.00020412545559968554,
+            9.727894773880754e-05
+          ],
+          "rmse_K": 14.09777620212258,
+          "boundary_conditioned_rollout_rmse_K": 9.126720514292128
+        }
+      }
+    },
+    "8": {
+      "training_runs": [
+        6,
+        7
+      ],
+      "shutoff_min": 83.67603333,
+      "flow_Nm3_h": 38.01465164,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0021679597860250793
+          ],
+          "rmse_K": 20.550863522400256,
+          "boundary_conditioned_rollout_rmse_K": 39.185423321720215
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0021679597860250793
+          ],
+          "rmse_K": 20.550863522400256,
+          "boundary_conditioned_rollout_rmse_K": 39.185423321720215
+        },
+        "advection + cooling": {
+          "coefficients": [
+            0.00019040782967297284,
+            0.00016661972251067942
+          ],
+          "rmse_K": 11.16952494701184,
+          "boundary_conditioned_rollout_rmse_K": 9.329138526877069
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            0.0,
+            0.00019040782967297298,
+            0.0001666197225106771
+          ],
+          "rmse_K": 11.169524947011839,
+          "boundary_conditioned_rollout_rmse_K": 9.329139314960718
+        }
+      }
+    },
+    "9": {
+      "training_runs": [
+        6,
+        7,
+        8
+      ],
+      "shutoff_min": 140.31995,
+      "flow_Nm3_h": 38.01465164,
+      "window_layer_observations": 50,
+      "models": {
+        "local cooling": {
+          "coefficients": [
+            0.0022217065339902357
+          ],
+          "rmse_K": 19.12298078806105,
+          "boundary_conditioned_rollout_rmse_K": 34.81214152862669
+        },
+        "diffusion + cooling": {
+          "coefficients": [
+            0.0,
+            0.0022217065339902352
+          ],
+          "rmse_K": 19.122980788061053,
+          "boundary_conditioned_rollout_rmse_K": 34.81214152862669
+        },
+        "advection + cooling": {
+          "coefficients": [
+            0.00019562482875802456,
+            0.00010768515024044214
+          ],
+          "rmse_K": 10.279754408261878,
+          "boundary_conditioned_rollout_rmse_K": 9.008525778627288
+        },
+        "diffusion + advection + cooling": {
+          "coefficients": [
+            0.0,
+            0.0001956248287580246,
+            0.00010768515024044163
+          ],
+          "rmse_K": 10.279754408261878,
+          "boundary_conditioned_rollout_rmse_K": 9.008529857458234
+        }
+      }
+    }
+  }
+}

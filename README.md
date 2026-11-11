@@ -1,5 +1,13 @@
 # PDE discovery from measured heat transfer
 
+## Case 1 · Air cooling a packed bed
+
+Can a model fitted on previous runs predict temperatures inside a porous bed on a new run? On nine experiments from DLR and RWTH Aachen, advection-based models reduce interior rollout error. With an upwind discretization, fitted explicit diffusion drops to zero in all nine folds. [Case study and reproduction](PACKED_BED_PDE.md)
+
+![Measured temperatures and model errors for whole held-out packed-bed runs.](results/packed_bed_pde/heldout.png)
+
+## Case 2 · Heat conduction in metal rods
+
 **Can an equation learned from two heater settings predict the inside of a metal rod at a third?** We test on 27 wind-tunnel experiments with six thermocouples each, spanning aluminum, copper, and stainless steel. The solver sees the initial profile and both measured end temperatures. The four interior temperature histories are held out. [Experimental data and attribution](data/README.md)
 
 ![A discovered PDE and a fixed heat equation predict four held-out thermocouples in aluminum.](results/heldout.gif)

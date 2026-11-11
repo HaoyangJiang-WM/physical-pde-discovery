@@ -1,0 +1,106 @@
+{
+  "doi": "10.17632/3pp86gdvh4.2",
+  "license": "CC BY 4.0",
+  "files": {
+    "0_GeneralInformation/Overview_MeasurementDevices.xlsx": {
+      "sha256": "9ac1285d5f346a955b3b0c543518985398eda03cb6677c5cea72805a3c18ecf0",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/f6da0c44-8bdf-404f-b2dc-4375f50e9944/file_downloaded",
+      "bytes": 28542
+    },
+    "0_GeneralInformation/StartingTimes.xlsx": {
+      "sha256": "5e8f66fa4cd8ca7ae82c65c4be2ae53f18a23359a5dc3d2c94d75dd31f4c0202",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/490a225c-26fb-4ba1-ab61-e5d6b0ef12fe/file_downloaded",
+      "bytes": 28560
+    },
+    "1_LowFlowTest1/Average_PackedBed_SurfaceTemp.asc": {
+      "sha256": "3a5f5085451278f1a760473f67cdaa5b8633ab8159ea5fc71e66c208768ee261",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/4c050b23-dd2a-4110-af50-662355886ea3/file_downloaded",
+      "bytes": 13064
+    },
+    "1_LowFlowTest1/MeasurementData.CSV": {
+      "sha256": "680e90905a75c2c4b554d8e7a900483b354bec8195ee8475dd8a4bded3f84a7d",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/b3788b16-e403-4f0e-88eb-b619afcf0f0d/file_downloaded",
+      "bytes": 11955847
+    },
+    "2_LowFlowTest2/Average_PackedBed_SurfaceTemp.asc": {
+      "sha256": "745cb9ebf5eb8b1872e864512379a6fdcf8a0651e9b4b06ffdcabb567a392d0c",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/bf023fd7-4206-4102-9bd4-1db580ac39c3/file_downloaded",
+      "bytes": 13008
+    },
+    "2_LowFlowTest2/MeasurementData.CSV": {
+      "sha256": "9c2974b9ff2369b26cb9a69175b67cc1b5a4827d971e75a071a77408c332fe2d",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/cd814946-f76d-4729-8286-a8a42dfabaf6/file_downloaded",
+      "bytes": 12116028
+    },
+    "3_LowFlowTest3/Average_PackedBed_SurfaceTemp.asc": {
+      "sha256": "c2ef3c02dc10db3705b99bf9c9759a5d7516f1599b0c4a74906c8100f69276c1",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/32b52ec9-2a6c-4d48-9412-38a1294d4ef8/file_downloaded",
+      "bytes": 13440
+    },
+    "3_LowFlowTest3/MeasurementData.CSV": {
+      "sha256": "21e8293da2a8faaf2a257d3baef393d8c0867152f991583875aa91bd6328e869",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/415a5fe8-52fb-40a6-b4e0-9adacd880616/file_downloaded",
+      "bytes": 14195495
+    },
+    "4_LowFlowTest4/Average_PackedBed_SurfaceTemp.asc": {
+      "sha256": "cd5c1277783533db948248c46575b2f9b18c689668f1607c5267b41b0ac2036a",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/7fa28ad8-7b2f-4c1b-be78-32831f287380/file_downloaded",
+      "bytes": 6567
+    },
+    "4_LowFlowTest4/MeasurementData.CSV": {
+      "sha256": "985f4452c04e495c6f07227d3ce238975d596caa5a9ea04f8e52fb08645e1d68",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/cc91efeb-f7c1-4efe-9346-fb31d6c70512/file_downloaded",
+      "bytes": 8686080
+    },
+    "5_LowFlowTest_D50/Average_PackedBed_SurfaceTemp.asc": {
+      "sha256": "bb95d210f3ff56dbe4d5453fdd7cff8d9ed541d2faff21fc771caa770d2b7454",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/c562bd6f-5071-43f7-9c2d-534ee4810851/file_downloaded",
+      "bytes": 17064
+    },
+    "5_LowFlowTest_D50/MeasurementData.CSV": {
+      "sha256": "3318140e2de217cce5c407f862b238385f5872e46a11710ef8fed260cce22425",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/0a3dee06-0f09-417f-9a6a-ff733f416a17/file_downloaded",
+      "bytes": 9512075
+    },
+    "6_HighFlowTest1/Average_PackedBed_SurfaceTemp.asc": {
+      "sha256": "76efd77e20e3fe7f2193b394902c75dca5dc0699000332f903e114a1acbab5c0",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/4a262fd4-59cf-4490-b5ec-90744829ab0b/file_downloaded",
+      "bytes": 10208
+    },
+    "6_HighFlowTest1/MeasurementData.CSV": {
+      "sha256": "cbbf5b9846c2bd0945cebf6517f8a9b003f7d4b5aaf54c1de6bc8dc8de1a629b",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/129ccd85-9cde-48bd-9498-67eddae33565/file_downloaded",
+      "bytes": 6519770
+    },
+    "7_HighFlowTest2/Average_PackedBed_SurfaceTemp.asc": {
+      "sha256": "aa3da9bd6a0c7ffc5fc287700a7c9bbb60f91d091b8ad4f06d0ad3fde0582985",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/39f26aec-cf52-442d-bc31-37fe609dcad1/file_downloaded",
+      "bytes": 8982
+    },
+    "7_HighFlowTest2/MeasurementData.CSV": {
+      "sha256": "19b88ec506a3e2407ca4bb40adeb8247d2467f4913b0a62de39afede45254a6b",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/fb978c1b-91c1-4422-8280-ba0db15b61ce/file_downloaded",
+      "bytes": 9318017
+    },
+    "8_HighFlowTest3/Average_PackedBed_SurfaceTemp.asc": {
+      "sha256": "b9e2aa9cef92d6222eebd1fbaf3fc119b785a39aaf0d099c1b96b3483841c6a3",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/3ff4ba81-2901-41db-8a9d-ca13f6773f4d/file_downloaded",
+      "bytes": 13067
+    },
+    "8_HighFlowTest3/MeasurementData.CSV": {
+      "sha256": "1cbfdd865524224959a0d28836528c79dc7228e37e725e9e4be7b32f4ea799ef",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/f0b97916-8190-4011-8042-6ebb1afaec9f/file_downloaded",
+      "bytes": 5346093
+    },
+    "9_HighFlowTest_D50/Average_PackedBed_SurfaceTemp.asc": {
+      "sha256": "557a18be9272ce1dd85cfcb00ca1f6a9f25294918b9c5ca4e5dab19f35b3e752",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/3f78a13f-d1a0-43be-a169-bcc175be9624/file_downloaded",
+      "bytes": 8408
+    },
+    "9_HighFlowTest_D50/MeasurementData.CSV": {
+      "sha256": "050bd98e110121a9063e7c361f8a7cbbedad55fea6eed42c05e2e69a22ccbe2e",
+      "url": "https://data.mendeley.com/public-files/datasets/3pp86gdvh4/files/705a5a7a-ff14-4ad7-a721-5cf20fffb623/file_downloaded",
+      "bytes": 8253502
+    }
+  }
+}
