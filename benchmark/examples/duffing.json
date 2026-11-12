@@ -1,0 +1,36 @@
+{
+  "case": "duffing",
+  "seed": 66000007,
+  "sigma": 0.03,
+  "rule": "lowest seed initially wrong and uncertain, ultimately correct; earliest correct update",
+  "chosen_round": 1,
+  "setting": [
+    1.4
+  ],
+  "initial_theta": [
+    1.7271729636454112,
+    0.0
+  ],
+  "new_theta": [
+    1.6642382995705682,
+    0.20880985166011687
+  ],
+  "true_theta": [
+    1.7061718534260708,
+    0.18506719913353714
+  ],
+  "old_probabilities": [
+    0.0,
+    0.6225466771295719,
+    0.0,
+    0.37745332287042876
+  ],
+  "new_probabilities": [
+    0.0,
+    8.11252067894994e-39,
+    0.0,
+    0.9999999999999966
+  ],
+  "equation": "x'=v; v'=-.3*v-a*x-b*x^3",
+  "fixed_T": 1.5
+}

@@ -1,2 +1,8 @@
-# Preserve the original data bytes across checkouts for SHA-256 verification.
-data/*.csv -text
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.gif binary
+*.png binary
+*.npz binary
+*.gz binary

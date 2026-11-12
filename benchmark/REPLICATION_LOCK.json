@@ -1,0 +1,25 @@
+{
+  "files": {
+    "models.py": "65477723553677a3157a356ac76bab08543de8b6555cde4fa5c4fd75383b383e",
+    "experiment.py": "001f4eb9d2bce897a8cfa4daf6ec7008aff596bd99e8b1da397c552b10aee859",
+    "fixed_plan.py": "298aa65ec0e1a3faacebe3a05acaaa77b7c3192a2ec10d903de5963dd6c53b1a",
+    "fixed_plans.json": "0934bd3781684623d5c5c59f49811635e163de725d6d1458c1730ccb34adc1d9"
+  },
+  "protocol": {
+    "cases": 11,
+    "noise_sd": [
+      0.03,
+      0.1
+    ],
+    "n_per_case_noise": 192,
+    "n_independent": 4224,
+    "T": 1.5,
+    "samples_per_channel": 16,
+    "additional_experiments": 3,
+    "order": 120,
+    "power": 5,
+    "stopping": "max support posterior >= .95 or three-run budget; identical for all policies",
+    "primary_contrast": "STRUCT_RISK minus D_OPT, paired within truth/noise"
+  },
+  "declaration": "No replication outcomes inspected before this lock."
+}

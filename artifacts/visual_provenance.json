@@ -1,0 +1,55 @@
+{
+  "replays": [
+    {
+      "case": "enzyme",
+      "seed": 64000000,
+      "policy": "D_OPT",
+      "stop_round": 1,
+      "provenance": "Replay of archived synthetic measurements and fitted coefficients. No new campaign run; no refitting. Curves beyond t=1.5 are predictions only.",
+      "selection_rule": "Previously archived: lowest seed initially wrong and uncertain, eventually correct. Illustrative, not an unbiased performance sample."
+    },
+    {
+      "case": "enzyme",
+      "seed": 64000000,
+      "policy": "STRUCT_RISK",
+      "stop_round": 1,
+      "provenance": "Replay of archived synthetic measurements and fitted coefficients. No new campaign run; no refitting. Curves beyond t=1.5 are predictions only.",
+      "selection_rule": "Previously archived: lowest seed initially wrong and uncertain, eventually correct. Illustrative, not an unbiased performance sample."
+    },
+    {
+      "case": "duffing",
+      "seed": 66000007,
+      "policy": "D_OPT",
+      "stop_round": 1,
+      "provenance": "Replay of archived synthetic measurements and fitted coefficients. No new campaign run; no refitting. Curves beyond t=1.5 are predictions only.",
+      "selection_rule": "Previously archived: lowest seed initially wrong and uncertain, eventually correct. Illustrative, not an unbiased performance sample."
+    },
+    {
+      "case": "duffing",
+      "seed": 66000007,
+      "policy": "STRUCT_RISK",
+      "stop_round": 1,
+      "provenance": "Replay of archived synthetic measurements and fitted coefficients. No new campaign run; no refitting. Curves beyond t=1.5 are predictions only.",
+      "selection_rule": "Previously archived: lowest seed initially wrong and uncertain, eventually correct. Illustrative, not an unbiased performance sample."
+    },
+    {
+      "case": "allen_cahn",
+      "seed": 71000000,
+      "policy": "D_OPT",
+      "stop_round": 1,
+      "provenance": "Replay of archived synthetic measurements and fitted coefficients. No new campaign run; no refitting. Curves beyond t=1.5 are predictions only.",
+      "selection_rule": "Previously archived: lowest seed initially wrong and uncertain, eventually correct. Illustrative, not an unbiased performance sample."
+    },
+    {
+      "case": "allen_cahn",
+      "seed": 71000000,
+      "policy": "STRUCT_RISK",
+      "stop_round": 1,
+      "provenance": "Replay of archived synthetic measurements and fitted coefficients. No new campaign run; no refitting. Curves beyond t=1.5 are predictions only.",
+      "selection_rule": "Previously archived: lowest seed initially wrong and uncertain, eventually correct. Illustrative, not an unbiased performance sample."
+    }
+  ],
+  "controls": "failure_controls.json",
+  "axes": "Every response curve extends to t=3. Only t<=1.5 is observed. Previous coefficients stay frozen; under a new condition the same old equation is re-simulated.",
+  "benchmark_source": "benchmark/replication/trials.csv.gz"
+}

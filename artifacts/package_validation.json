@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Publication benchmark artifacts match release hashes",
+      "passed": true,
+      "detail": {
+        "files": 82,
+        "mismatch": []
+      }
+    },
+    {
+      "name": "4,224 independent main tasks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Four paired policies per task",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All task paths have four rounds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Published accuracy equals raw records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "One first-stop record per paired path",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Stops use the declared threshold or budget",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All local README/document links resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "Animated bayesian_loop.gif",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Animated doptimal_loop.gif",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Animated duffing_loop.gif",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Animated pde_loop.gif",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Animated why_intervene.gif",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Five README GIFs present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Three honest noise-free STLSQ controls",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Six auditable replay records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Archived fits and design scores: enzyme_struct_risk_replay",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Archived fits and design scores: duffing_struct_risk_replay",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Archived fits and design scores: allen_cahn_struct_risk_replay",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Archived fits and design scores: duffing_d_opt_replay",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Archived fits and design scores: enzyme_d_opt_replay",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Archived fits and design scores: allen_cahn_d_opt_replay",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "gifs": {
+    "bayesian_loop.gif": {
+      "frames": 8,
+      "seconds": 20.2,
+      "size": [
+        1200,
+        795
+      ]
+    },
+    "doptimal_loop.gif": {
+      "frames": 8,
+      "seconds": 20.2,
+      "size": [
+        1200,
+        795
+      ]
+    },
+    "duffing_loop.gif": {
+      "frames": 8,
+      "seconds": 20.2,
+      "size": [
+        1200,
+        795
+      ]
+    },
+    "pde_loop.gif": {
+      "frames": 8,
+      "seconds": 20.2,
+      "size": [
+        1200,
+        795
+      ]
+    },
+    "why_intervene.gif": {
+      "frames": 9,
+      "seconds": 25.2,
+      "size": [
+        1200,
+        795
+      ]
+    }
+  },
+  "scope": "Publication reconstruction checks; the original seeds are reused, not an independent new population."
+}

@@ -1,0 +1,40 @@
+{
+  "cases": "reaction,chemostat,reversible,enzyme,oscillator,duffing,forced_damping,predator,diffusion_pde,advection_diffusion,allen_cahn",
+  "n": 192,
+  "order": 120,
+  "power": 5,
+  "sigmas": ".03,.10",
+  "seed": 61000000,
+  "workers": 4,
+  "policies": "RANDOM,FIXED,D_OPT,STRUCT_RISK",
+  "scenario": "matched",
+  "out": "replication",
+  "build_only": false,
+  "T": 1.5,
+  "times": [
+    0.09375,
+    0.1875,
+    0.28125,
+    0.375,
+    0.46875,
+    0.5625,
+    0.65625,
+    0.75,
+    0.84375,
+    0.9375,
+    1.03125,
+    1.125,
+    1.21875,
+    1.3125,
+    1.40625,
+    1.5
+  ],
+  "Q": 0.4,
+  "max_steps": 3,
+  "confidence": 0.95,
+  "stop": "confidence >= .95 or budget only; no one-step-value stop",
+  "source_sha256": {
+    "models.py": "65477723553677a3157a356ac76bab08543de8b6555cde4fa5c4fd75383b383e",
+    "experiment.py": "001f4eb9d2bce897a8cfa4daf6ec7008aff596bd99e8b1da397c552b10aee859"
+  }
+}

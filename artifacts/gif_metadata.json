@@ -1,0 +1,47 @@
+{
+  "bayesian_loop.gif": {
+    "frames": 8,
+    "size": [
+      1200,
+      795
+    ],
+    "duration_seconds": 20.2,
+    "bytes": 432787
+  },
+  "doptimal_loop.gif": {
+    "frames": 8,
+    "size": [
+      1200,
+      795
+    ],
+    "duration_seconds": 20.2,
+    "bytes": 426876
+  },
+  "duffing_loop.gif": {
+    "frames": 8,
+    "size": [
+      1200,
+      795
+    ],
+    "duration_seconds": 20.2,
+    "bytes": 409552
+  },
+  "pde_loop.gif": {
+    "frames": 8,
+    "size": [
+      1200,
+      795
+    ],
+    "duration_seconds": 20.2,
+    "bytes": 427549
+  },
+  "why_intervene.gif": {
+    "frames": 9,
+    "size": [
+      1200,
+      795
+    ],
+    "duration_seconds": 25.2,
+    "bytes": 466205
+  }
+}
