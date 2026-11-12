@@ -15,7 +15,7 @@ for name in ('audit_solvers.py','audit_inference.py','audit_reaction3.py'):
 # the checker overwrites it with the actual 22-check result.
 final=final.replace("run(sys.executable,'run.py','check')", "write('artifacts/package_validation.json',json.dumps({'status':'validation pending; this file is replaced by the actual check results'})+'\\n')\nrun(sys.executable,'run.py','check')")
 final_path=Path(os.environ.get('RUNNER_TEMP','/tmp'))/'active-finalize.py'
-final_path.write_text(common+"\nB=ROOT/'benchmark'\n"+final)
+final_path.write_text(common+"\nB=ROOT/'benchmark'\nimport numpy as np\nimport pandas as pd\n"+final)
 ns={'__name__':'publication_core'}
 exec(compile(prefix,'frozen_publication_core.py','exec'),ns)
 ROOT=ns['ROOT'];B=ns['B'];run=ns['run'];protocol=ns['protocol']
