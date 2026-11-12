@@ -52,7 +52,7 @@ def equation(case,th):
 def condition(case,s):
     if case=='enzyme':return f'Initial concentration x(0) = {s[0]:g}'
     if case=='duffing':return f'Initial amplitude x(0) = {s[0]:g}'
-    return f'Initial field = {s[0]:g} cos({s[1]:g}x)'
+    return f'Initial amplitude {s[0]:g} | Mode {s[1]:g}'
 
 def trajectory(r,exp,show_fits,visible=16):
     fig,ax=plt.subplots(figsize=(5.55,3.85),dpi=100)
@@ -70,7 +70,7 @@ def trajectory(r,exp,show_fits,visible=16):
     all_y=np.r_[np.array(e['observed'])[:,0],*[c for c in curves]]
     span=max(.1,np.ptp(all_y));ax.set_ylim(all_y.min()-.1*span,all_y.max()+.18*span)
     ax.set_xlabel('Time (all acquisitions end at 1.5)')
-    ax.set_ylabel('Concentration' if r['case']=='enzyme' else 'Displacement' if r['case']=='duffing' else 'Field value at observed site x = 0')
+    ax.set_ylabel('Concentration' if r['case']=='enzyme' else 'Displacement' if r['case']=='duffing' else 'Field value at the first observed site')
     ax.set_title(condition(r['case'],e['setting']),fontsize=11)
     if show_fits or visible:ax.legend(fontsize=8,loc='best')
     fig.tight_layout(pad=1.25)
@@ -119,9 +119,13 @@ def campaign(r,filename):
             block(d,(665,320),'No new experiment has been observed yet.',450,25,True)
             block(d,(665,411),'The next condition must be chosen without looking at its outcomes.',450,21)
         d=ImageDraw.Draw(im)
-        text(d,(36,637),'M0: '+equation(r['case'],r['trace'][0]['coefficients']),20)
+        initial_fit = ('Diffusion only' if r['case']=='allen_cahn'
+                       else equation(r['case'],r['trace'][0]['coefficients']))
+        text(d,(36,637),'M0: '+initial_fit,20)
         if k>=6:
-            text(d,(36,674),'M1: '+equation(r['case'],r['trace'][1]['coefficients']),20,True)
+            updated_fit = ('Diffusion and cubic reaction' if r['case']=='allen_cahn'
+                           else equation(r['case'],r['trace'][1]['coefficients']))
+            text(d,(36,674),'M1: '+updated_fit,20,True)
             p=max(r['trace'][1]['probabilities']);text(d,(36,710),f'Posterior of selected structure: {100*p:.3f}%  |  1 added experiment',19)
         else:
             p=max(r['trace'][0]['probabilities']);text(d,(36,680),f'Initial maximum structure posterior: {100*p:.1f}%  |  still ambiguous',19)
@@ -209,18 +213,19 @@ def diffusion_identifiability_asset():
     for column, k in enumerate((1, 2)):
         field = np.cos(k * x)
         features = axes[0, column]
-        features.plot(x, -k**2 * field, color=blue, lw=3, label=r"$u_{xx}$")
-        features.plot(x, -k**4 * field, color=orange, lw=2, ls="--", label=r"$-u_{xxxx}$")
+        features.plot(x, -k**2 * field, color=blue, lw=3, label="Second-order feature")
+        features.plot(x, -k**4 * field, color=orange, lw=2, ls="--", label="Fourth-order feature")
         title = "Mode 1 | Features coincide" if k == 1 else "Mode 2 | Features have a 1:4 ratio"
-        features.set(title=title, xlabel="Position at reset", ylabel="Feature value")
-        features.set_xticks([0, np.pi, 2 * np.pi], ["0", r"$\pi$", r"$2\pi$"])
-        features.legend(frameon=False, loc="upper right")
+        features.set(title=title, xlabel="Position at reset", ylabel="Feature value",
+                     ylim=(-1.10 * k**4, 1.45 * k**4))
+        features.legend(frameon=False, loc="upper center", ncol=2, fontsize=9)
 
         trajectories = axes[1, column]
-        for (a, b), color, line, width in zip(coefficients, (blue, orange), ("-", "--"), (3, 2)):
+        labels = ("Second-order model", "Mixed-order model")
+        for (a, b), color, line, width, label in zip(coefficients, (blue, orange), ("-", "--"), (3, 2), labels):
             rate = a * k**2 + b * k**4
             trajectories.plot(t, np.exp(-rate * t), color=color, ls=line, lw=width,
-                              label=fr"$(a,b)=({a:.3g},{b:.3g})$")
+                              label=label)
         title = "Mode 1 | Predictions coincide" if k == 1 else "Mode 2 | Predictions separate"
         trajectories.set(title=title, xlabel="Time", ylabel="Mode amplitude", ylim=(0, 1.04))
         trajectories.legend(frameon=False, loc="lower left" if k == 1 else "upper right",
