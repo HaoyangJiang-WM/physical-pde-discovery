@@ -1,0 +1,36 @@
+{
+  "case": "enzyme",
+  "seed": 64000000,
+  "sigma": 0.03,
+  "rule": "lowest seed initially wrong and uncertain, ultimately correct; earliest correct update",
+  "chosen_round": 1,
+  "setting": [
+    2.0
+  ],
+  "initial_theta": [
+    0.5042217516465161,
+    0.0
+  ],
+  "new_theta": [
+    0.0,
+    0.31528906581245214
+  ],
+  "true_theta": [
+    0.0,
+    0.32084027413354144
+  ],
+  "old_probabilities": [
+    4.1322534013796594e-29,
+    0.5501893333913687,
+    0.37396295946868713,
+    0.07584770713994451
+  ],
+  "new_probabilities": [
+    1.9297050260190871e-243,
+    9.122785015020827e-14,
+    0.9993248873823576,
+    0.000675112617550195
+  ],
+  "equation": "x'=-a*x-b*x/(K+x); K=.4 known",
+  "fixed_T": 1.5
+}

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "This is a research demo and benchmark artifact, not a peer-reviewed publication. Cite the foundational methods listed in README.md when using those methods."
+title: "Active Equation Discovery: Fixed-Duration Experiments for Sparse Dynamical Models"
+type: software
+authors:
+  - family-names: Jiang
+    given-names: Haoyang
+version: 0.1.0
+abstract: "A reproducible synthetic benchmark comparing local D-optimal and Bayesian structure-risk experiment selection with a common sparse-library inference engine."
+keywords:
+  - equation discovery
+  - SINDy
+  - experimental design
+  - identifiability

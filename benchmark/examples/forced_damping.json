@@ -1,0 +1,36 @@
+{
+  "case": "forced_damping",
+  "seed": 67000002,
+  "sigma": 0.03,
+  "rule": "lowest seed initially wrong and uncertain, ultimately correct; earliest correct update",
+  "chosen_round": 1,
+  "setting": [
+    1.0
+  ],
+  "initial_theta": [
+    0.24377435645431703,
+    0.4331260021799497
+  ],
+  "new_theta": [
+    0.0,
+    0.7657553299365546
+  ],
+  "true_theta": [
+    0.0,
+    0.7605766033464911
+  ],
+  "old_probabilities": [
+    7.489105916780303e-99,
+    0.33925966175763245,
+    0.3004731762164519,
+    0.36026716202591424
+  ],
+  "new_probabilities": [
+    0.0,
+    2.273597078550764e-06,
+    0.5520429170711457,
+    0.44795480933177295
+  ],
+  "equation": "x'=v; v'=-x-a*v-b*v*abs(v)+2*sin(n*pi*t/T)",
+  "fixed_T": 1.5
+}

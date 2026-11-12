@@ -1,0 +1,10 @@
+{
+  "seconds": 362.08040280299997,
+  "unique_systems": 4224,
+  "policies": [
+    "RANDOM",
+    "FIXED",
+    "D_OPT",
+    "STRUCT_RISK"
+  ]
+}

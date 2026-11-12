@@ -1,0 +1,37 @@
+{
+  "case": "allen_cahn",
+  "seed": 71000000,
+  "sigma": 0.03,
+  "rule": "lowest seed initially wrong and uncertain, ultimately correct; earliest correct update",
+  "chosen_round": 1,
+  "setting": [
+    1.0,
+    1.0
+  ],
+  "initial_theta": [
+    0.0,
+    0.0
+  ],
+  "new_theta": [
+    0.0,
+    0.3539792055861464
+  ],
+  "true_theta": [
+    0.0,
+    0.3553522446099822
+  ],
+  "old_probabilities": [
+    0.6786215190037956,
+    0.0012270047543514076,
+    0.3176782178937875,
+    0.002473258348065137
+  ],
+  "new_probabilities": [
+    0.0,
+    0.0,
+    0.997956916574033,
+    0.002043083425966574
+  ],
+  "equation": "u_t=.04*u_xx+a*u-b*u^3; u(x,0)=A*cos(k*x); 32-site periodic MOL",
+  "fixed_T": 1.5
+}

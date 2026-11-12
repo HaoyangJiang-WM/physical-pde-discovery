@@ -1,0 +1,12 @@
+{
+  "repository": "HaoyangJiang-WM/physical-pde-discovery",
+  "original_main": "2d0719f11b37063f874aa0ca5a9dde7cdeed54ab",
+  "source_payload_sha256": "ef6b6e7561e4160c58aa2533105ba9acc88cf291b7c769c2e272a701d8d93403",
+  "run_id": "43274492195",
+  "raw_outputs": "Regenerated from the original frozen protocols and seeds; not byte-identical archive transfer.",
+  "primary_independent_worlds": 4224,
+  "three_mechanism_worlds": 192,
+  "stress_worlds": 672,
+  "paired_noise_reuse": 192,
+  "main_accuracy_verified_against_original": true
+}

@@ -1,0 +1,7 @@
+{
+  "paired_with": "stress/robustness, correlated subset",
+  "known_rho": 0.7,
+  "covariance": "oracle known, not estimated",
+  "independent_new_tasks": 0,
+  "paired_tasks": 192
+}
