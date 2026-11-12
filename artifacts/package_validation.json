@@ -45,6 +45,11 @@
       "detail": []
     },
     {
+      "name": "All repository text is English-only",
+      "passed": true,
+      "detail": []
+    },
+    {
       "name": "Animated bayesian_loop.gif",
       "passed": true,
       "detail": ""

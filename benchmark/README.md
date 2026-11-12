@@ -1,6 +1,6 @@
 # Fixed-duration active sparse equation discovery: two selectors, many systems
 
-This is a synthetic numerical benchmark, not new SOTA, hardware validation, or an official UQ-SINDy reproduction. Read RESULTS_ZH.md for all outcomes and limits.
+This is a synthetic numerical benchmark, not new SOTA, hardware validation, or an official UQ-SINDy reproduction. Read RESULTS.md for all outcomes and limits.
 
 ## Reproduce
 

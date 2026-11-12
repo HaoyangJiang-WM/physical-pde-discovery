@@ -4,7 +4,7 @@
 
 **Can a partially identified equation help choose the next experiment that identifies it?** This repository makes that question executable: fit a sparse dynamical model, choose a new experimental condition, collect new observations, and update the equation.
 
-[中文说明](README.zh-CN.md) · [How it works](docs/METHOD.md) · [Results and limits](docs/RESULTS.md) · [Reproduce](docs/REPRODUCE.md)
+[How it works](docs/METHOD.md) · [Results and limits](docs/RESULTS.md) · [Reproduce](docs/REPRODUCE.md)
 
 > **Scope:** a reproducible synthetic benchmark, not a new SINDy algorithm or a claim of state-of-the-art performance. Two established experiment-selection principles share the same Bayesian sparse-library inference engine.
 

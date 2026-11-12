@@ -1,7 +1,6 @@
 {
-  "README.md": "dac2b8fd00225b481e7cea0aaea8b5a59abdb2c5d779aec1fd451a98eb54e161",
+  "README.md": "e0f5f2f981990655e4a790877dbde11a53ebda73a01ecadcd1088089007cdb9b",
   "REPLICATION_LOCK.json": "dbc75e182540b22c5bbed781c9c204b544c43bc708bf0e927f562dbbb411e29d",
-  "RESULTS_ZH.md": "e647a2cd07959f40ab6b10d6edf189e5995a2421031cfc11d427d8e89678e839",
   "active_action_counts.csv": "b130ce22bf8c6adcbca54444a67620050d6fc0ba89c5161bd2a72b5e7df31563",
   "analyze.py": "d537fe32805a7a975afa74cc3ac0be4b0ebebedec2bc8821824aa728522dff17",
   "analyze_extra.py": "77710a4e5944869d1fb1818e61f801265cc75a3ef51e930e0c7d411da341a942",
@@ -49,7 +48,7 @@
   "learning_curves.csv": "f4405620f10ae88b88fdfcd7f877f77bd0a06e34205416a5dc84ec811996d471",
   "lock_audit.json": "f1587d81b81051f81fba3d0dbaa616ac4ad70a1da5c3bb323c4fd9568d64eca6",
   "make_figures.py": "ea3fa2c9da155c218fe148a972d588050df39fb993e6d3e1ff21c2fb0b61a4f6",
-  "make_report.py": "5896416e135f763b078842e5a114069ef442d13eb73f1bcc0d624baa23e2047a",
+  "make_report.py": "1e7da97bcae7f4608d21de6936797c0f2ff65934f7834148f6651f09e6858eca",
   "models.py": "65477723553677a3157a356ac76bab08543de8b6555cde4fa5c4fd75383b383e",
   "noise_aware.py": "5da862d38c472ebfb84eef3239ad1385076974cb8d372b09e30a4686b927f22f",
   "noise_model_comparison.csv": "f06cca9a8ce19aab7700bd38b3990e1522e9698d6172dc35264678144dd4aea6",
@@ -80,5 +79,6 @@
   "stress/robustness/trials.csv": "e38c812ab9453676b74512332c2172b2c3e33a0dd1bd1f2a6b30971451ff88b2",
   "three_term_paired.csv": "1daef96eda756b6da22e46af833896af378d74c875c78df01ca3da3abc15c296",
   "three_term_results.csv": "dee797039a08226feebc20fc267f2f1660c36d3932864821423e1317c58b1d21",
-  "uncertain_stopping.csv": "7975d4fa143ee1f6c7cade14e36d0af73522fbdc46c2bddc896c147bd99345b5"
+  "uncertain_stopping.csv": "7975d4fa143ee1f6c7cade14e36d0af73522fbdc46c2bddc896c147bd99345b5",
+  "RESULTS.md": "01fa120961891927dc0f13a2c9dbed5c003bc1f24a16b322f3b949dafb9c25df"
 }

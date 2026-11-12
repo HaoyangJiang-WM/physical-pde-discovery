@@ -59,7 +59,7 @@ Original checks include independent integration, sensitivity, grid, quadrature a
 
 This packaging turn preserved the original numerical archive and recomputed its summary tables. It did **not** rerun 4,224 tasks or re-establish original performance. The demo is run afresh as a small executable check; the three STLSQ controls are new deterministic diagnostics, not added benchmark trials.
 
-[Paired comparisons](../benchmark/paired_comparisons.csv) · [Original detailed report](../benchmark/RESULTS_ZH.md) · [Package checks](../artifacts/package_validation.json) · [Main records (gzip)](../benchmark/replication/trials.csv.gz)
+[Paired comparisons](../benchmark/paired_comparisons.csv) · [Original detailed report](../benchmark/RESULTS.md) · [Package checks](../artifacts/package_validation.json) · [Main records (gzip)](../benchmark/replication/trials.csv.gz)
 '''
 (ROOT/'docs/RESULTS.md').write_text(text)
 cs=json.loads((ROOT/'artifacts/failure_controls.json').read_text())

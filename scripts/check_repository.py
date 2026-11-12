@@ -34,13 +34,25 @@ def main():
     st=d[d.stopped_here==1];check('One first-stop record per paired path',len(st)==4224*4)
     check('Stops use the declared threshold or budget',((st.confident==1)|(st['round']==3)).all())
     # Validate all local links in new user-facing Markdown (external references are not fetched here).
-    missing=[];paths=[ROOT/'README.md',ROOT/'README.zh-CN.md',*sorted((ROOT/'docs').glob('*.md'))]
+    missing=[];paths=[ROOT/'README.md',*sorted((ROOT/'docs').glob('*.md'))]
     for md in paths:
         for url in re.findall(r'\]\(([^)]+)\)',md.read_text()):
             if re.match(r'^(https?://|mailto:|#)',url):continue
             url=url.split('#')[0]
             if url and not (md.parent/url).exists():missing.append(f'{md.relative_to(ROOT)} -> {url}')
     check('All local README/document links resolve',not missing,missing)
+# Check all readable source and documentation files for Han characters.
+    nonenglish=[]
+    suffixes={'.md','.py','.txt','.json','.csv','.yml','.yaml','.cff','.toml','.ini'}
+    for source in ROOT.rglob('*'):
+        if source.is_file() and source.suffix.lower() in suffixes:
+            try:
+                content=source.read_text(encoding='utf-8')
+            except UnicodeError:
+                continue
+            if any(0x3400 <= ord(ch) <= 0x9fff for ch in content):
+                nonenglish.append(str(source.relative_to(ROOT)))
+    check('All repository text is English-only',not nonenglish,nonenglish)
     images={}
     for p in sorted((ROOT/'assets').glob('*.gif')):
         with Image.open(p) as im:
