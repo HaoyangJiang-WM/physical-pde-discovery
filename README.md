@@ -1,12 +1,10 @@
 # Active Equation Discovery
 
-Fit several candidate equations to the data, choose an experiment that helps tell them apart, then refit on all acquired runs. The benchmark compares two ways to choose that next experiment on synthetic ODEs and PDEs.
-
 [Motivation](#motivation) · [Method](#method) · [Results](#results) · [Reproduce](docs/REPRODUCE.md)
 
 ## Motivation
 
-Sparse equation discovery methods such as SINDy can fit an observed trajectory accurately even when several governing equations explain the same data. **Can those candidate equations help us choose the next experiment that distinguishes them?**
+Scientific equation discovery aims to recover interpretable governing laws from observations. Methods such as SINDy can identify sparse dynamical equations that accurately explain measured trajectories. However, **a good fit does not guarantee that the underlying physical law is identifiable.**
 
 ### Why a second experiment can still be ambiguous
 
