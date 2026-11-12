@@ -14,17 +14,18 @@ One of eight observed sites is shown. Measurements end at $t=1.5$. [Replay data]
 
 ## Why the next experiment matters
 
-For $u_t=a u_{xx}-b u_{xxxx}$, the amplitude of a Fourier mode with wavenumber $k$ decays at rate
+**Can a perfect fit tell second-order diffusion from fourth-order diffusion?** Consider $u_t=a u_{xx}-b u_{xxxx}$. A sparse regression uses $u_{xx}$ and $-u_{xxxx}$ as its two feature columns. For a single Fourier mode $u(x,t)=A(t)\cos(kx)$,
 
 $$
-\lambda_k=ak^2+bk^4.
+u_{xx}=-k^2u,\qquad -u_{xxxx}=-k^4u,\qquad
+A'(t)=-\underbrace{(ak^2+bk^4)}_{\lambda_k}A(t).
 $$
 
-Mode 1 reveals only $a+b$. Mode 2 independently reveals $a+4b$ from its decay rate divided by four. The two measurements identify both coefficients in this noiseless example.
+At $k=1$, both columns are exactly $-u$ at every sampled position and time. The data determine only $a+b$. For example, $(a,b)=(0.15,0)$ and $(0.075,0.075)$ both give $\lambda_1=0.15$ and exactly the same trajectory. More samples from that mode keep the same rank-one feature matrix.
 
-![One Fourier mode gives identical trajectories for two different equations. The second mode separates their predictions. The two constraints in coefficient space intersect at a single solution.](assets/fourier_mode_identifiability.png)
+![Top row: the two regression features overlap on mode 1 and have a 1:4 amplitude ratio on mode 2. Bottom row: the two candidate equations predict the same trajectory on mode 1 and different decay rates on mode 2.](assets/fourier_mode_identifiability.png)
 
-[Diffusion, reaction and oscillator controls](docs/FAILURE_CASES.md#one-spatial-mode-hides-the-diffusion-order)
+A run at $k=2$ gives $\lambda_2=4a+16b$. The same two candidates now predict decay rates of $0.60$ and $1.50$. Each mode gives one constraint. The feature ratio changes from $1:1$ to $1:4$, so the two runs together identify both coefficients. This is the motivation for experiment selection: **choose a condition that separates mechanisms the current data leave indistinguishable.** [Exact-derivative controls](docs/FAILURE_CASES.md#one-spatial-mode-hides-the-diffusion-order)
 
 ## How the method chooses an experiment
 

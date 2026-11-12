@@ -196,12 +196,51 @@ def result_assets():
     ax.set_ylabel('Exact support recovery (%)');ax.legend();fig.tight_layout();fig.savefig(OUT/'learning_curve.png');plt.close(fig)
 
 
+
+def diffusion_identifiability_asset():
+    control = json.loads((ROOT / "artifacts/failure_controls.json").read_text())["pde_mode"]
+    coefficients = (control["true_coef"], control["old_coef"])
+    blue, orange = "#2367a2", "#b34d27"
+    x = np.linspace(0, 2 * np.pi, 257)
+    t = np.linspace(0, 3, 200)
+
+    fig, axes = plt.subplots(2, 2, figsize=(9.4, 5.5), layout="constrained")
+    fig.suptitle("One mode hides the diffusion order", fontsize=17, fontweight="bold")
+    for column, k in enumerate((1, 2)):
+        field = np.cos(k * x)
+        features = axes[0, column]
+        features.plot(x, -k**2 * field, color=blue, lw=3, label=r"$u_{xx}$")
+        features.plot(x, -k**4 * field, color=orange, lw=2, ls="--", label=r"$-u_{xxxx}$")
+        title = "Mode 1 | Features coincide" if k == 1 else "Mode 2 | Features have a 1:4 ratio"
+        features.set(title=title, xlabel="Position at reset", ylabel="Feature value")
+        features.set_xticks([0, np.pi, 2 * np.pi], ["0", r"$\pi$", r"$2\pi$"])
+        features.legend(frameon=False, loc="upper right")
+
+        trajectories = axes[1, column]
+        for (a, b), color, line, width in zip(coefficients, (blue, orange), ("-", "--"), (3, 2)):
+            rate = a * k**2 + b * k**4
+            trajectories.plot(t, np.exp(-rate * t), color=color, ls=line, lw=width,
+                              label=fr"$(a,b)=({a:.3g},{b:.3g})$")
+        title = "Mode 1 | Predictions coincide" if k == 1 else "Mode 2 | Predictions separate"
+        trajectories.set(title=title, xlabel="Time", ylabel="Mode amplitude", ylim=(0, 1.04))
+        trajectories.legend(frameon=False, loc="lower left" if k == 1 else "upper right",
+                            fontsize=9)
+
+    for axis in axes.flat:
+        axis.set_axisbelow(True)
+        axis.grid(color="#dfe6ec", linewidth=.7)
+        axis.spines[["top", "right"]].set_visible(False)
+    fig.savefig(OUT / "fourier_mode_identifiability.png", dpi=165, facecolor="white")
+    plt.close(fig)
+
+
 def main():
     frames={}
     for c,p,name in [('enzyme','STRUCT_RISK','bayesian_loop.gif'),('enzyme','D_OPT','doptimal_loop.gif'),('duffing','STRUCT_RISK','duffing_loop.gif'),('allen_cahn','STRUCT_RISK','pde_loop.gif')]:
         r=json.loads((ROOT/f'artifacts/{c}_{p.lower()}_replay.json').read_text())
         frames[name]=campaign(r,name)
     failure_assets();result_assets()
+    diffusion_identifiability_asset()
     contact=Image.new('RGB',(W*2,H*2),'white')
     for idx,f in enumerate([frames['bayesian_loop.gif'][2],frames['bayesian_loop.gif'][-1],frames['duffing_loop.gif'][-1],frames['pde_loop.gif'][-1]]):
         contact.paste(f,((idx%2)*W,(idx//2)*H))
