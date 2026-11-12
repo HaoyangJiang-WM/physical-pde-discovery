@@ -6,20 +6,43 @@ Fit several candidate equations to the data, choose an experiment that helps tel
 
 ## Motivation
 
-**Can a perfect fit tell second-order diffusion from fourth-order diffusion?** Consider $u_t=a u_{xx}-b u_{xxxx}$. A sparse regression uses $u_{xx}$ and $-u_{xxxx}$ as its two feature columns. For a single Fourier mode $u(x,t)=A(t)\cos(kx)$,
+Sparse equation discovery methods such as SINDy can fit an observed trajectory accurately even when several governing equations explain the same data. **Can those candidate equations help us choose the next experiment that distinguishes them?**
+
+### Why a second experiment can still be ambiguous
+
+Consider two PDEs on a periodic domain.
 
 $$
-u_{xx}=-k^2u,\qquad -u_{xxxx}=-k^4u,\qquad
-A'(t)=-\underbrace{(ak^2+bk^4)}_{\lambda_k}A(t).
+M_1:\quad u_t=D u_{xx}-ru,
+\qquad
+M_2:\quad u_t=-K u_{xxxx}-\ell u.
 $$
 
-At $k=1$, both columns are exactly $-u$ at every sampled position and time. The data determine only $a+b$. For example, $(a,b)=(0.15,0)$ and $(0.075,0.075)$ both give $\lambda_1=0.15$ and exactly the same trajectory. More samples from that mode keep the same rank-one feature matrix.
+Only the initial condition changes between experiments. **Each model must use one shared set of coefficients across all runs and spatial modes.** A mode initialized as $u(x,0)=\cos(kx)$ evolves as $u(x,t)=e^{-\lambda_k t}\cos(kx)$, with decay rates
 
-![Top row: the two regression features overlap on mode 1 and have a 1:4 amplitude ratio on mode 2. Bottom row: the two candidate equations predict the same trajectory on mode 1 and different decay rates on mode 2.](assets/fourier_mode_identifiability.png)
+$$
+\lambda_k^{(1)}=Dk^2+r,
+\qquad
+\lambda_k^{(2)}=Kk^4+\ell.
+$$
 
-A run at $k=2$ gives $\lambda_2=4a+16b$. The same two candidates now predict decay rates of $0.60$ and $1.50$. Each mode gives one constraint. The feature ratio changes from $1:1$ to $1:4$, so the two runs together identify both coefficients. This is the motivation for experiment selection: **choose a condition that separates mechanisms the current data leave indistinguishable.** [Exact-derivative controls](docs/FAILURE_CASES.md#one-spatial-mode-hides-the-diffusion-order)
+A first experiment with $k=1$ reveals one decay rate, even with perfect observations. A second experiment with $k=2$ reveals another, but the ambiguity can survive a joint refit. If $M_1$ generates the data, $M_2$ matches both rates exactly by choosing
+
+$$
+K=\frac{D}{5},
+\qquad
+\ell=r+\frac{4D}{5}.
+$$
+
+Initialize the second experiment with $u(x,0)=\cos(2x)+\cos(3x)$ to measure two independent decay rates in the same run. After matching modes 1 and 2, $M_2$ predicts a rate of $17D+r$ for mode 3, while $M_1$ predicts $9D+r$. The difference is $8D$, so the two runs distinguish the models whenever $D>0$. When $D=0$, both candidates can reduce to the same pointwise decay law.
+
+![Mode amplitude over time. The two candidate curves overlap exactly for modes 1 and 2 and separate for mode 3.](assets/fourier_mode_refit.png)
+
+*Illustration with $D=0.10$ and $r=0.15$. The fourth-order model is refitted jointly to modes 1 and 2, then evaluated on mode 3.*
 
 ## Method
+
+**Sparse equation discovery → Experiment selection → New observations → Joint refitting**
 
 1. **Fit candidate equations.** From the same predefined library, estimate the probability $p(S\mid D)$ of each term set $S$ given the noisy observations $D$. A term can be exactly zero. All experiments share the same physical coefficients.
 2. **Score candidate experiments.** A condition $e$ changes the initial state or input. Both selectors use the same model and candidate experiments.
@@ -52,6 +75,8 @@ One of eight observed sites is shown. Dots are observed samples through $t=1.5$.
 **4,224 tasks · 11 system families · 2 noise levels · up to 3 added experiments**
 
 ### Exact equation-structure recovery (%)
+
+The table reports exact recovery of the optional term set after all three added experiments. The diffusion benchmark uses a library containing both diffusion terms. The Fourier example above compares two analytical candidates with separate loss terms.
 
 | Case | Random | Fixed Design | D-optimal | Bayesian |
 | --- | ---: | ---: | ---: | ---: |

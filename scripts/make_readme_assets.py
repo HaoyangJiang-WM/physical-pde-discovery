@@ -239,6 +239,38 @@ def diffusion_identifiability_asset():
     plt.close(fig)
 
 
+def fourier_refit_asset():
+    diffusion, loss = 0.10, 0.15
+    modes = np.arange(1, 4)
+    time = np.linspace(0, 4, 250)
+    rates_second = diffusion * modes**2 + loss
+    fourth_order, fourth_loss = np.linalg.solve(
+        np.column_stack((modes[:2]**4, np.ones(2))), rates_second[:2]
+    )
+    rates_fourth = fourth_order * modes**4 + fourth_loss
+
+    fig, axes = plt.subplots(1, 3, figsize=(9.4, 3.4), sharex=True, sharey=True,
+                             layout="constrained")
+    titles = ("Mode 1 · overlap", "Mode 2 · overlap", "Mode 3 · separation")
+    for ax, title, rate_second, rate_fourth in zip(axes, titles, rates_second, rates_fourth):
+        ax.plot(time, np.exp(-rate_second * time), color="#2367a2", lw=3.4,
+                label="Second-order diffusion + loss")
+        ax.plot(time, np.exp(-rate_fourth * time), color="#b34d27", lw=1.9, ls="--",
+                label="Fourth-order diffusion + loss (refitted)")
+        ax.set(title=title, xlabel="Time", xlim=(0, 4), ylim=(0, 1.04))
+        ax.set_xticks([0, 1, 2, 3, 4])
+        ax.set_yticks([0, 0.25, 0.5, 0.75, 1])
+        ax.set_axisbelow(True)
+        ax.grid(color="#dfe6ec", linewidth=0.7)
+        ax.spines[["top", "right"]].set_visible(False)
+
+    axes[0].set_ylabel("Normalized mode amplitude")
+    fig.legend(*axes[0].get_legend_handles_labels(), loc="outside lower center", ncol=2,
+               frameon=False, fontsize=10)
+    fig.savefig(OUT / "fourier_mode_refit.png", dpi=165, facecolor="white")
+    plt.close(fig)
+
+
 def main():
     frames={}
     for c,p,name in [('enzyme','STRUCT_RISK','bayesian_loop.gif'),('enzyme','D_OPT','doptimal_loop.gif'),('duffing','STRUCT_RISK','duffing_loop.gif'),('allen_cahn','STRUCT_RISK','pde_loop.gif')]:
@@ -246,6 +278,7 @@ def main():
         frames[name]=campaign(r,name)
     failure_assets();result_assets()
     diffusion_identifiability_asset()
+    fourier_refit_asset()
     contact=Image.new('RGB',(W*2,H*2),'white')
     for idx,f in enumerate([frames['bayesian_loop.gif'][2],frames['bayesian_loop.gif'][-1],frames['duffing_loop.gif'][-1],frames['pde_loop.gif'][-1]]):
         contact.paste(f,((idx%2)*W,(idx//2)*H))
