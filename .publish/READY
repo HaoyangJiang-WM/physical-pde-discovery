@@ -1,0 +1,3 @@
+source_payload_sha256=ef6b6e7561e4160c58aa2533105ba9acc88cf291b7c769c2e272a701d8d93403
+expected_main=2d0719f11b37063f874aa0ca5a9dde7cdeed54ab
+User authorized replacing the current repository contents while preserving Git history.
