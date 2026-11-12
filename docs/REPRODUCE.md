@@ -52,7 +52,7 @@ For Windows, set thread environment variables in the shell or let `experiment.py
 ## Data layout
 
 ```text
-README.md / README.zh-CN.md      readable entry points
+README.md                       English project entry point
 assets/                         five GIFs and static figures
 docs/                           method, results, controls, roadmap, provenance
 run.py                          safe entry points
