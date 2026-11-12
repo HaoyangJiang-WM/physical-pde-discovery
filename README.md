@@ -36,7 +36,7 @@ $$
 
 The dashed curve uses the same refitted coefficients in all three panels. The second-order model uses $D=0.10$ and $r=0.15$.
 
-**Can a partially identified equation guide its next experiment?** We use the candidate structures still supported by the data to predict which experimental conditions could distinguish them.
+**Can a partially identified equation guide its next experiment?** The challenge is to design informative experiments even when the currently selected equation is incorrect. We use the candidate structures still supported by the data to predict which experimental conditions could distinguish them.
 
 ## Method
 
