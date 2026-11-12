@@ -36,16 +36,18 @@ $$
 
 The dashed curve uses the same refitted coefficients in all three panels. The second-order model uses $D=0.10$ and $r=0.15$.
 
-**How can we use the candidate equations that still fit to choose the next experiment?**
+**Can a partially identified equation guide its next experiment?** We use the candidate structures still supported by the data to predict which experimental conditions could distinguish them.
 
 ## Method
+
+**Does an experiment that improves coefficient estimates also help identify the correct equation?** We compare two established design criteria in the same discovery loop. A condition can sharpen estimates within a candidate equation while leaving its alternatives plausible.
 
 **1. Fit several structures.** Start with a predefined library of terms. Fit model trajectories to the noisy observations $\mathcal D$ to estimate the posterior probability $p(S\mid\mathcal D)$ of each active term set $S$. Within each structure, coefficients are shared across runs.
 
 **2. Choose the next condition.** Both selectors score the same menu of initial conditions or inputs before seeing any new measurements.
 
-- **D-optimal** picks the condition with the largest gain in local coefficient information, measured by $\log\det(G+I_e)-\log\det G$. Here $G$ is the current information matrix and $I_e$ is the contribution estimated for condition $e$ from trajectory sensitivities.
-- **Bayesian** picks the condition with the largest expected drop in the probability of choosing the wrong term set. It averages over candidate structures, their coefficients and the noisy measurements $Y_e$ they predict.
+- **D-optimal · parameter information.** Pick the condition with the largest gain in local coefficient information, $\log\det(G+I_e)-\log\det G$. Here $G$ is the current information matrix and $I_e$ is estimated from trajectory sensitivities under condition $e$.
+- **Bayesian · structure discrimination.** Pick the condition with the largest expected drop in the probability of choosing the wrong term set. Average over candidate structures, their coefficients and the noisy measurements $Y_e$ they predict.
 
 $$
 \begin{aligned}
@@ -56,22 +58,34 @@ $$
 
 **3. Measure and refit.** Add the selected run and update the posterior using all runs. In the early-stopping evaluation, declare a structure once its posterior reaches 95%, or report the task as unresolved at the budget limit. [Method details](docs/METHOD.md)
 
-### Worked example · Reaction–diffusion
+### Two selectors on the same reaction
 
-In this synthetic replay, the initial amplitude of $0.2$ favors a diffusion-only fit. The Bayesian selector raises the amplitude to $1.0$ at the same spatial frequency, where the cubic term has a larger effect. Refitting both runs brings the cubic term into the selected equation.
+Both replays start from the same noisy, low-concentration measurements. Both selectors choose the same higher initial concentration (from 0.25 to 2.0), where the new observations support saturating kinetics. The scores in the two animations measure different quantities. [D-optimal replay data](artifacts/enzyme_d_opt_replay.json) · [Bayesian replay data](artifacts/enzyme_struct_risk_replay.json)
 
-$$
-\text{Initial fit: } u_t=0.04u_{xx},\qquad
-\text{Updated fit: } u_t=0.04u_{xx}-0.3540u^3.
-$$
+**D-optimal**
 
-![Synthetic reaction–diffusion replay showing candidate scoring, acquisition and refitting.](assets/pde_loop.gif)
+![D-optimal replay of the saturating reaction, from initial measurements to joint refitting.](assets/doptimal_loop.gif)
 
-The GIF shows one of eight observed sites. Dots mark samples through $t=1.5$, and the dashed curve uses the initial fit. [Replay data](artifacts/allen_cahn_struct_risk_replay.json)
+**Bayesian structure risk**
+
+![Bayesian structure-risk replay of the same reaction with the same initial measurements.](assets/bayesian_loop.gif)
+
+<details>
+<summary>More replays: reaction–diffusion and Duffing oscillator</summary>
+
+**Reaction–diffusion.** Increasing the initial amplitude at the same spatial frequency reveals a cubic reaction term. [Replay data](artifacts/allen_cahn_struct_risk_replay.json)
+
+![Reaction–diffusion replay showing the newly identified cubic reaction.](assets/pde_loop.gif)
+
+**Duffing oscillator.** A different initial amplitude reveals nonlinear stiffness. [Replay data](artifacts/duffing_struct_risk_replay.json)
+
+![Duffing oscillator replay showing the newly identified nonlinear stiffness.](assets/duffing_loop.gif)
+
+</details>
 
 ## Results
 
-The benchmark covers **4,224 synthetic tasks across 11 ODE and PDE families at two noise levels**. Each policy starts with the same initial run and adds three runs. Fixed Design uses a schedule optimized before seeing the task's data.
+The benchmark covers **4,224 synthetic tasks across 11 ODE and PDE families at two noise levels**. Each family has a predefined library with **two optional mechanisms**, yielding four candidate term sets. In 35.9% of tasks neither optional mechanism is present. All policies share the initial run and add three runs. Fixed Design uses a schedule optimized in advance.
 
 ### Exact equation-structure recovery (%)
 
@@ -91,10 +105,11 @@ Recovery means selecting exactly the optional terms in the generating equation a
 | Advection–diffusion | 100 | 100 | 100 | 100 |
 | Nonlinear reaction–diffusion | 96.09 | 98.70 | 98.18 | 99.22 |
 | **Overall** | **95.03** | **97.80** | **97.75** | **97.92** |
+| At least one optional term (2,709 tasks) | 92.62 | 96.60 | 96.53 | 96.75 |
 
-**Both adaptive selectors recovered the correct structure on more tasks than random.** The Bayesian selector gained **2.89 percentage points** over random (paired 95% interval **+2.30 to +3.55**) and **0.12 points** over Fixed Design (interval **−0.19 to +0.40**). The latter comparison leaves the benefit of adapting to each task unresolved. [Paired comparisons](benchmark/paired_comparisons.csv) · [Early stopping and benchmark limits](docs/RESULTS.md#early-stopping-is-a-different-endpoint)
+**Both adaptive selectors improved on random selection.** Bayesian structure risk gained **2.89 percentage points** over random (paired 95% interval **+2.30 to +3.55**), **0.12 points** over Fixed Design (**−0.19 to +0.40**), and **0.17 points** over D-optimal (**−0.17 to +0.50**). The latter two intervals leave the ranking among these three designs unresolved. [Paired comparisons](benchmark/paired_comparisons.csv) · [Early stopping and benchmark limits](docs/RESULTS.md#early-stopping-is-a-different-endpoint)
 
-## Run locally
+## Reproduce and extend
 
 ```bash
 python -m pip install -r requirements.txt
@@ -102,4 +117,4 @@ python run.py demo
 python -X utf8 run.py check
 ```
 
-[Full reproduction guide](docs/REPRODUCE.md) · [Data and code provenance](docs/PROVENANCE.md) · [Roadmap](docs/ROADMAP.md)
+Next steps are larger libraries of competing mechanisms and learning correlated or nonconstant measurement noise. [Reproduction guide](docs/REPRODUCE.md) · [Provenance](docs/PROVENANCE.md) · [Roadmap](docs/ROADMAP.md)
