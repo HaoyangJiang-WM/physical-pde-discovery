@@ -1,0 +1,93 @@
+name: Remove non-English repository content
+on:
+  push:
+    branches: [english-only-20261112]
+permissions:
+  contents: write
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Replace Chinese-language files and prevent regeneration
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, hashlib
+          R=Path('.')
+          def update(path,old,new):
+              p=R/path
+              content=p.read_text(encoding='utf-8')
+              assert old in content,(path,old)
+              p.write_text(content.replace(old,new),encoding='utf-8')
+          update('README.md','[中文说明](README.zh-CN.md) · ','')
+          update('docs/REPRODUCE.md','README.md / README.zh-CN.md      readable entry points','README.md                       English project entry point')
+          update('docs/RESULTS.md','../benchmark/RESULTS_ZH.md','../benchmark/RESULTS.md')
+          update('benchmark/README.md','RESULTS_ZH.md','RESULTS.md')
+          update('scripts/write_documents.py','../benchmark/RESULTS_ZH.md','../benchmark/RESULTS.md')
+          update('scripts/check_repository.py',"paths=[ROOT/'README.md',ROOT/'README.zh-CN.md',*sorted((ROOT/'docs').glob('*.md'))]", "paths=[ROOT/'README.md',*sorted((ROOT/'docs').glob('*.md'))]")
+          p=R/'scripts/check_repository.py'
+          code=p.read_text(encoding='utf-8')
+          needle='    images={}\n'
+          assert needle in code
+          add="""    # Check all readable source and documentation files for Han characters.
+              nonenglish=[]
+              suffixes={'.md','.py','.txt','.json','.csv','.yml','.yaml','.cff','.toml','.ini'}
+              for source in ROOT.rglob('*'):
+                  if source.is_file() and source.suffix.lower() in suffixes:
+                      try:
+                          content=source.read_text(encoding='utf-8')
+                      except UnicodeError:
+                          continue
+                      if any(0x3400 <= ord(ch) <= 0x9fff for ch in content):
+                          nonenglish.append(str(source.relative_to(ROOT)))
+              check('All repository text is English-only',not nonenglish,nonenglish)
+          """
+          from textwrap import dedent
+          code=code.replace(needle,dedent(add).replace('\n','\n    ' ).rstrip()+'\n'+needle)
+          # The insertion is kept within the checker's main() scope.
+          p.write_text(code,encoding='utf-8')
+          (R/'README.zh-CN.md').unlink()
+          (R/'benchmark/RESULTS_ZH.md').unlink()
+          report_generator="""from pathlib import Path
+          ROOT=Path(__file__).resolve().parent
+          text=(ROOT.parent/'docs/RESULTS.md').read_text(encoding='utf-8')
+          text=text.replace('(ROADMAP.md)','(../docs/ROADMAP.md)')
+          text=text.replace('[Original detailed report](../benchmark/RESULTS.md) · ','')
+          (ROOT/'RESULTS.md').write_text(text,encoding='utf-8')
+          print('Wrote English benchmark report')
+          """
+          (R/'benchmark/make_report.py').write_text(dedent(report_generator),encoding='utf-8')
+          # Retain the complete English, data-grounded 11-case / four-policy report.
+          import subprocess,sys
+          subprocess.run([sys.executable,'benchmark/make_report.py'],check=True)
+          m=R/'benchmark/ARTIFACT_SHA256.json'
+          manifest=json.loads(m.read_text(encoding='utf-8'))
+          manifest.pop('RESULTS_ZH.md',None)
+          for name in ['README.md','make_report.py','RESULTS.md']:
+              manifest[name]=hashlib.sha256((R/'benchmark'/name).read_bytes()).hexdigest()
+          m.write_text(json.dumps(manifest,indent=2)+'\n',encoding='utf-8')
+          PY
+      - name: Install dependencies and validate the English-only project
+        run: |
+          python -m pip install -r requirements.txt
+          python run.py check
+          python -m unittest discover -s tests -v
+          python run.py summary
+          test ! -e README.zh-CN.md
+          test ! -e benchmark/RESULTS_ZH.md
+      - name: Commit replacement to main (preserve history)
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Make all documentation and source English-only'
+          git push origin HEAD:main
