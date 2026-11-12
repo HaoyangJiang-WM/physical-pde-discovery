@@ -28,21 +28,24 @@ One of eight observed sites is shown. Measurements end at $t=1.5$. [Replay data]
 
 **4,224 tasks · 11 system families · 2 noise levels · up to 3 added experiments**
 
-| Experiment selector | Exact term recovery at full budget | Mean added runs with early stopping |
-| --- | ---: | ---: |
-| Random | 95.03% | 1.435 |
-| Prior-optimized fixed | 97.80% | 1.023 |
-| D-optimal | 97.75% | 1.035 |
-| Bayesian structure risk | 97.92% | 1.004 |
+### Exact equation-structure recovery (%)
 
-Both adaptive selectors use the same Bayesian sparse model. D-optimality targets coefficient information. Structure risk targets errors in term selection. Against optimized fixed, structure risk gained **0.12 percentage points** (paired 95% interval **−0.19 to +0.40**). [Method and assumptions](docs/METHOD.md) · [Paired comparisons](benchmark/paired_comparisons.csv)
+| Case | Random | Fixed Design | D-optimal | Bayesian |
+| --- | ---: | ---: | ---: | ---: |
+| First-/second-order reaction | 92.19 | 95.57 | 96.09 | 95.57 |
+| Co-reactant kinetics | 97.40 | 99.22 | 99.48 | 99.48 |
+| Reversible reaction | 97.92 | 98.96 | 98.70 | 98.96 |
+| Saturating kinetics | 91.93 | 97.40 | 97.66 | 97.66 |
+| Nonlinear oscillator | 95.83 | 99.22 | 99.22 | 99.48 |
+| Duffing oscillator | 93.75 | 99.74 | 99.74 | 99.74 |
+| Forced nonlinear damping | 83.07 | 87.50 | 86.98 | 87.24 |
+| Predator–prey coupling | 98.70 | 100 | 100 | 100 |
+| Second-/fourth-order diffusion | 98.44 | 99.48 | 99.22 | 99.74 |
+| Advection–diffusion | 100 | 100 | 100 | 100 |
+| Nonlinear reaction–diffusion | 96.09 | 98.70 | 98.18 | 99.22 |
+| **Overall** | **95.03** | **97.80** | **97.75** | **97.92** |
 
-<details>
-<summary>Per-family results</summary>
-
-![Exact term recovery by family for D-optimal and structure-risk selection. Forced nonlinear damping is the hardest family.](assets/benchmark_results.png)
-
-</details>
+Both adaptive selectors use the same Bayesian sparse model. D-optimality targets coefficient information. Structure risk targets errors in term selection. Against optimized fixed, structure risk gained **0.12 percentage points** (paired 95% interval **−0.19 to +0.40**). [Method and assumptions](docs/METHOD.md) · [Paired comparisons](benchmark/paired_comparisons.csv) · [Early stopping results](docs/RESULTS.md#early-stopping-is-a-different-endpoint)
 
 <details>
 <summary>More experiment replays</summary>
