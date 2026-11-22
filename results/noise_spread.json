@@ -1,0 +1,416 @@
+[
+{
+"field": "biology",
+"name": "SIR",
+"eq": 0,
+"noise": 0.05,
+"lo": 0.9778058892215311,
+"hi": 1.053358924750363,
+"spread": 5.907566148266707
+},
+{
+"field": "biology",
+"name": "SIR",
+"eq": 1,
+"noise": 0.05,
+"lo": 0.9673702255168596,
+"hi": 1.083843398921428,
+"spread": 6.92468959361536
+},
+{
+"field": "biology",
+"name": "SIR",
+"eq": 2,
+"noise": 0.05,
+"lo": 1.0003622261259852,
+"hi": 1.0003622261259852,
+"spread": 1.0
+},
+{
+"field": "biology",
+"name": "FitzHugh–Nagumo",
+"eq": 0,
+"noise": 0.05,
+"lo": 0.9757916335744135,
+"hi": 1.0395246458634977,
+"spread": 5.0665853130054375
+},
+{
+"field": "biology",
+"name": "FitzHugh–Nagumo",
+"eq": 1,
+"noise": 0.05,
+"lo": 1.00117987793884,
+"hi": 1.00117987793884,
+"spread": 1.0
+},
+{
+"field": "biology",
+"name": "Selkov",
+"eq": 0,
+"noise": 0.05,
+"lo": 0.9264050564883435,
+"hi": 1.215587281125694,
+"spread": 36.761582334278266
+},
+{
+"field": "biology",
+"name": "Selkov",
+"eq": 1,
+"noise": 0.05,
+"lo": 0.9708189031769408,
+"hi": 1.3914191134301905,
+"spread": 51.867177529642085
+},
+{
+"field": "biology",
+"name": "toggle switch",
+"eq": 0,
+"noise": 0.05,
+"lo": 0.9692669897092713,
+"hi": 1.036825131727122,
+"spread": 2.718702768662312
+},
+{
+"field": "biology",
+"name": "toggle switch",
+"eq": 1,
+"noise": 0.05,
+"lo": 0.9818372811655002,
+"hi": 1.0428663572648176,
+"spread": 2.7179550173418505
+},
+{
+"field": "chemistry",
+"name": "Michaelis–Menten",
+"eq": 0,
+"noise": 0.05,
+"lo": 0.9325994217242091,
+"hi": 1.0720104016745335,
+"spread": 38.11592480078031
+},
+{
+"field": "chemistry",
+"name": "Michaelis–Menten",
+"eq": 1,
+"noise": 0.05,
+"lo": 0.9325994217242091,
+"hi": 1.0720104016745335,
+"spread": 38.11592480078031
+},
+{
+"field": "chemistry",
+"name": "Brusselator",
+"eq": 0,
+"noise": 0.05,
+"lo": 0.9389576639967887,
+"hi": 1.3388052092607419,
+"spread": 24.84301593631706
+},
+{
+"field": "chemistry",
+"name": "Brusselator",
+"eq": 1,
+"noise": 0.05,
+"lo": 0.9574596220965155,
+"hi": 1.2984837112465935,
+"spread": 32.79096018256873
+},
+{
+"field": "chemistry",
+"name": "binding A+B⇌C",
+"eq": 0,
+"noise": 0.05,
+"lo": 0.9763412916601016,
+"hi": 1.0082782513075685,
+"spread": 3.8607522865384953
+},
+{
+"field": "chemistry",
+"name": "binding A+B⇌C",
+"eq": 1,
+"noise": 0.05,
+"lo": 0.9763412916601016,
+"hi": 1.0082782513075685,
+"spread": 3.8607522865384953
+},
+{
+"field": "chemistry",
+"name": "binding A+B⇌C",
+"eq": 2,
+"noise": 0.05,
+"lo": 0.9763412916601016,
+"hi": 1.0082782513075685,
+"spread": 3.8607522865384953
+},
+{
+"field": "chemistry",
+"name": "Arrhenius",
+"eq": 0,
+"noise": 0.05,
+"lo": 0.9153975672895455,
+"hi": 1.162883482935397,
+"spread": 13.101060173942562
+},
+{
+"field": "chemistry",
+"name": "Arrhenius",
+"eq": 1,
+"noise": 0.05,
+"lo": 0.9134696121329435,
+"hi": 1.32017789820261,
+"spread": 14.841740592088087
+},
+{
+"field": "materials",
+"name": "Allen–Cahn",
+"eq": 0,
+"noise": 0.05,
+"lo": 1.0022060374199895,
+"hi": 2.0895464540651125,
+"spread": 30.932782528149964
+},
+{
+"field": "materials",
+"name": "grain growth",
+"eq": 0,
+"noise": 0.05,
+"lo": 0.9850403070564607,
+"hi": 1.1233807984142283,
+"spread": 20.371942045200992
+},
+{
+"field": "materials",
+"name": "grain growth",
+"eq": 1,
+"noise": 0.05,
+"lo": 0.9811840209977157,
+"hi": 1.1151760038832603,
+"spread": 20.506226637551954
+},
+{
+"field": "materials",
+"name": "Landau",
+"eq": 0,
+"noise": 0.05,
+"lo": 0.9958551852758162,
+"hi": 0.9958551852758162,
+"spread": 1.0
+},
+{
+"field": "materials",
+"name": "Landau",
+"eq": 1,
+"noise": 0.05,
+"lo": 0.9765545956749901,
+"hi": 1.4192560893838384,
+"spread": 36.577116738757965
+},
+{
+"field": "biology",
+"name": "SIR",
+"eq": 0,
+"noise": 0.1,
+"lo": 0.9251649347774423,
+"hi": 1.017575708630506,
+"spread": 5.9189269295910885
+},
+{
+"field": "biology",
+"name": "SIR",
+"eq": 1,
+"noise": 0.1,
+"lo": 0.9712029351244769,
+"hi": 1.1159040796806432,
+"spread": 6.94485830382489
+},
+{
+"field": "biology",
+"name": "SIR",
+"eq": 2,
+"noise": 0.1,
+"lo": 0.9986436714716836,
+"hi": 0.9986436714716836,
+"spread": 1.0
+},
+{
+"field": "biology",
+"name": "FitzHugh–Nagumo",
+"eq": 0,
+"noise": 0.1,
+"lo": 0.9519648765197487,
+"hi": 1.0419887287220233,
+"spread": 5.209004952737466
+},
+{
+"field": "biology",
+"name": "FitzHugh–Nagumo",
+"eq": 1,
+"noise": 0.1,
+"lo": 0.9945223806687001,
+"hi": 0.9945223806687001,
+"spread": 1.0
+},
+{
+"field": "biology",
+"name": "Selkov",
+"eq": 0,
+"noise": 0.1,
+"lo": 0.9145664410292321,
+"hi": 1.5258189578583545,
+"spread": 27.04794335629006
+},
+{
+"field": "biology",
+"name": "Selkov",
+"eq": 1,
+"noise": 0.1,
+"lo": 0.9167462521751855,
+"hi": 2.136986154028163,
+"spread": 31.67834362139678
+},
+{
+"field": "biology",
+"name": "toggle switch",
+"eq": 0,
+"noise": 0.1,
+"lo": 0.8894864167457169,
+"hi": 1.069777117790225,
+"spread": 2.397316623569268
+},
+{
+"field": "biology",
+"name": "toggle switch",
+"eq": 1,
+"noise": 0.1,
+"lo": 0.911390936504559,
+"hi": 1.0622590911248313,
+"spread": 2.508701132158258
+},
+{
+"field": "chemistry",
+"name": "Michaelis–Menten",
+"eq": 0,
+"noise": 0.1,
+"lo": 0.839006162873153,
+"hi": 1.3851547056512652,
+"spread": 179.01581164863964
+},
+{
+"field": "chemistry",
+"name": "Michaelis–Menten",
+"eq": 1,
+"noise": 0.1,
+"lo": 0.839006162873153,
+"hi": 1.3851547056512652,
+"spread": 179.01581164863964
+},
+{
+"field": "chemistry",
+"name": "Brusselator",
+"eq": 0,
+"noise": 0.1,
+"lo": 0.893157921314646,
+"hi": 1.553268442106524,
+"spread": 21.04691788907252
+},
+{
+"field": "chemistry",
+"name": "Brusselator",
+"eq": 1,
+"noise": 0.1,
+"lo": 0.9275801437580609,
+"hi": 1.5985382920308475,
+"spread": 25.491777557542548
+},
+{
+"field": "chemistry",
+"name": "binding A+B⇌C",
+"eq": 0,
+"noise": 0.1,
+"lo": 0.957383822754157,
+"hi": 1.029201084402164,
+"spread": 3.886798718618976
+},
+{
+"field": "chemistry",
+"name": "binding A+B⇌C",
+"eq": 1,
+"noise": 0.1,
+"lo": 0.957383822754157,
+"hi": 1.029201084402164,
+"spread": 3.886798718618976
+},
+{
+"field": "chemistry",
+"name": "binding A+B⇌C",
+"eq": 2,
+"noise": 0.1,
+"lo": 0.957383822754157,
+"hi": 1.029201084402164,
+"spread": 3.886798718618976
+},
+{
+"field": "chemistry",
+"name": "Arrhenius",
+"eq": 0,
+"noise": 0.1,
+"lo": 0.8419827932718599,
+"hi": 1.5848260207984615,
+"spread": 10.960944087947242
+},
+{
+"field": "chemistry",
+"name": "Arrhenius",
+"eq": 1,
+"noise": 0.1,
+"lo": 0.8379785689677078,
+"hi": 1.9911572432763633,
+"spread": 11.403087017052853
+},
+{
+"field": "materials",
+"name": "Allen–Cahn",
+"eq": 0,
+"noise": 0.1,
+"lo": 0.8793579204402778,
+"hi": 3.270381235461748,
+"spread": 20.332516510289096
+},
+{
+"field": "materials",
+"name": "grain growth",
+"eq": 0,
+"noise": 0.1,
+"lo": 0.965717415521006,
+"hi": 1.2650633625235346,
+"spread": 18.880044428059026
+},
+{
+"field": "materials",
+"name": "grain growth",
+"eq": 1,
+"noise": 0.1,
+"lo": 0.9665447599808756,
+"hi": 1.2630007565185937,
+"spread": 18.908615777565004
+},
+{
+"field": "materials",
+"name": "Landau",
+"eq": 0,
+"noise": 0.1,
+"lo": 1.0010240055744277,
+"hi": 1.0010240055744277,
+"spread": 1.0
+},
+{
+"field": "materials",
+"name": "Landau",
+"eq": 1,
+"noise": 0.1,
+"lo": 0.8383827832734323,
+"hi": 2.176910384376745,
+"spread": 26.07897847508192
+}
+]

@@ -7,6 +7,8 @@ This repository answers that with one noise model. The model fixes how the equat
 - **Active E-SINDy** (Fasel et al. 2022): ensemble variance.
 - ***How Low Can You Go?***: D-optimal design.
 
+Slides (24 pages, PDF): [slides/noise-aware-active-esindy.pdf](slides/noise-aware-active-esindy.pdf).
+
 ## The idea in one formula
 
 A sparse-regression row is `r = b − a·ξ`. The features `a` and the target `b` are both computed from noisy measurements `m`. To first order:
@@ -135,6 +137,10 @@ python src/noise_explain.py
 python src/process_fig.py selkov 0.05 0
 ```
 
+```bash
+python src/slide_figs.py
+```
+
 ## Repository layout
 
 | Path | Contents |
@@ -146,7 +152,8 @@ python src/process_fig.py selkov 0.05 0
 | `src/graphs.py` | network-dynamics protocol: graph library with exact gradients, snapshot experiments |
 | `src/baselines.py` | Weak SINDy, Bayesian SINDy (SBL) and Modified SINDy, re-implemented from the papers |
 | `src/compare_pretrained.py` | passive comparison with the pretrained ODEFormer |
-| `src/report.py`, `src/plot.py`, `src/noise_explain.py`, `src/process_fig.py` | tables and figures |
+| `src/report.py`, `src/plot.py`, `src/noise_explain.py`, `src/process_fig.py`, `src/slide_figs.py` | tables and figures (`slide_figs.py` draws the slide figures) |
+| `slides/` | the slide deck as PDF |
 | `results/` | raw results (`*.json`) and printed summaries (`*.txt`) |
 | `docs/METHOD.md` | full algorithm, hyperparameters, every protocol |
 | `docs/RESULTS.md` | all tables, diagnostics and approaches that were tried and dropped |
