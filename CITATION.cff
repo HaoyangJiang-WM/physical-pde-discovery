@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Research prototype on synthetic benchmarks, not a peer-reviewed publication. Please also cite the methods listed in README.md."
+title: "Noise-aware active equation discovery"
+type: software
+authors:
+  - family-names: Jiang
+    given-names: Haoyang
+version: 0.2.0
+abstract: "One first-order noise model, Cov(r) = sigma^2 J J^T, used both to identify sparse equations (whitening and a significance test) and to choose the next experiment (I-optimal on whitened rows). Compared with Active E-SINDy, D-optimal design and literature identifiers given active selection, on point, trajectory, PDE, domain-model and network-dynamics protocols."
+keywords:
+  - equation discovery
+  - SINDy
+  - active learning
+  - optimal experimental design

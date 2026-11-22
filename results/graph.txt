@@ -1,0 +1,136 @@
+1728 trials in 79s
+
+== sis, noise 5%: exact-support recovery (%) by number of measured points
+identification+acquisition   30   40   50   60   80   90  100  110  130   mean
+esindy+variance          19   41   56   56   50   47   56   50   44   46.5
+esindy+dopt              19   38   50   53   44   41   41   28   44   39.6
+sbl+iopt                 94  100   97   97   84   81   84   81   72   87.8
+esindy+random            19   34   59   62   75   69   69   69   72   58.7
+esindy_wt+random         84   91   91   88   84   84   84   88   84   86.5
+esindy_wt+iopt           88   94   94   94  100  100  100  100   97   96.2
+paired difference of esindy_wt+iopt to each other arm (percentage points, +- 1 s.e.)
+  - esindy+variance       +49.7 +- 5.4
+  - esindy+dopt           +56.6 +- 6.1
+  - sbl+iopt               +8.3 +- 3.5
+  - esindy+random         +37.5 +- 5.6
+  - esindy_wt+random       +9.7 +- 4.0
+
+== sis, noise 10%: exact-support recovery (%) by number of measured points
+identification+acquisition   30   40   50   60   80   90  100  110  130   mean
+esindy+variance           0    3    6    6    3    6    6    9    3   4.9
+esindy+dopt               6    3    3    0    3    6    0    0    3   2.8
+sbl+iopt                 81   69   69   50   59   41   53   44   34   55.6
+esindy+random             3    6    3    6   19   12    6   19   19   10.4
+esindy_wt+random         59   69   66   59   66   62   72   62   59   63.9
+esindy_wt+iopt           66   62   69   62   53   62   66   59   56   61.8
+paired difference of esindy_wt+iopt to each other arm (percentage points, +- 1 s.e.)
+  - esindy+variance       +56.9 +- 5.9
+  - esindy+dopt           +59.0 +- 5.9
+  - sbl+iopt               +6.2 +- 5.8
+  - esindy+random         +51.4 +- 5.3
+  - esindy_wt+random       -2.1 +- 6.3
+
+== sis, noise 20%: exact-support recovery (%) by number of measured points
+identification+acquisition   30   40   50   60   80   90  100  110  130   mean
+esindy+variance           0    0    0    0    3    0    0    0    0   0.3
+esindy+dopt               0    0    0    0    0    0    0    0    0   0.0
+sbl+iopt                 53   56   53   50   28    6    9    9    3   29.9
+esindy+random             0    0    3    0    3    0    3    0    0   1.0
+esindy_wt+random         16   28   25   25   28   12   25   19   16   21.5
+esindy_wt+iopt            6   28   28   22   28   22    3   12    6   17.4
+paired difference of esindy_wt+iopt to each other arm (percentage points, +- 1 s.e.)
+  - esindy+variance       +17.0 +- 3.3
+  - esindy+dopt           +17.4 +- 3.2
+  - sbl+iopt              -12.5 +- 4.6
+  - esindy+random         +16.3 +- 3.4
+  - esindy_wt+random       -4.2 +- 5.3
+
+== bistable, noise 5%: exact-support recovery (%) by number of measured points
+identification+acquisition   30   40   50   60   80   90  100  110  130   mean
+esindy+variance         100  100  100  100  100  100  100  100  100   100.0
+esindy+dopt             100  100  100  100  100  100  100  100  100   100.0
+sbl+iopt                100  100  100  100  100  100  100  100  100   100.0
+esindy+random           100  100  100  100  100  100  100  100  100   100.0
+esindy_wt+random        100  100  100  100  100  100  100  100  100   100.0
+esindy_wt+iopt          100  100  100  100  100  100  100  100  100   100.0
+paired difference of esindy_wt+iopt to each other arm (percentage points, +- 1 s.e.)
+  - esindy+variance        +0.0 +- 0.0
+  - esindy+dopt            +0.0 +- 0.0
+  - sbl+iopt               +0.0 +- 0.0
+  - esindy+random          +0.0 +- 0.0
+  - esindy_wt+random       +0.0 +- 0.0
+
+== bistable, noise 10%: exact-support recovery (%) by number of measured points
+identification+acquisition   30   40   50   60   80   90  100  110  130   mean
+esindy+variance          84   94   91   91   88   88   91   91   94   89.9
+esindy+dopt              81   97   94   94   91   91   88   88   91   90.3
+sbl+iopt                 69   81   94   94   91   97   97   97   97   90.6
+esindy+random            91   91   94   94   94   94   97   94  100   94.1
+esindy_wt+random        100  100  100  100  100  100  100  100  100   100.0
+esindy_wt+iopt          100  100  100  100  100  100  100  100  100   100.0
+paired difference of esindy_wt+iopt to each other arm (percentage points, +- 1 s.e.)
+  - esindy+variance       +10.1 +- 4.3
+  - esindy+dopt            +9.7 +- 3.7
+  - sbl+iopt               +9.4 +- 3.0
+  - esindy+random          +5.9 +- 3.6
+  - esindy_wt+random       +0.0 +- 0.0
+
+== bistable, noise 20%: exact-support recovery (%) by number of measured points
+identification+acquisition   30   40   50   60   80   90  100  110  130   mean
+esindy+variance          41   31   31   19   16    9   16   16    6   20.5
+esindy+dopt              44   44   31   22   16   16   16    9    0   21.9
+sbl+iopt                 28   34   41   38   34   34   44   41   47   37.8
+esindy+random            44   44   50   47   50   50   47   59   56   49.7
+esindy_wt+random         75   84   88   91   94   88   94   94   91   88.5
+esindy_wt+iopt           78   81   97   91   97  100  100  100  100   93.8
+paired difference of esindy_wt+iopt to each other arm (percentage points, +- 1 s.e.)
+  - esindy+variance       +73.3 +- 4.7
+  - esindy+dopt           +71.9 +- 4.0
+  - sbl+iopt              +55.9 +- 6.3
+  - esindy+random         +44.1 +- 6.4
+  - esindy_wt+random       +5.2 +- 2.6
+
+== competition, noise 5%: exact-support recovery (%) by number of measured points
+identification+acquisition   30   40   50   60   80   90  100  110  130   mean
+esindy+variance          56   38   41   47   41   41   38   38   47   42.7
+esindy+dopt              50   56   62   59   53   41   34   38   47   49.0
+sbl+iopt                 72   72   91   91   91   91   88   84   88   85.1
+esindy+random            44   69   72   75   78   81   84   78   94   75.0
+esindy_wt+random         94  100  100  100  100  100  100  100  100   99.3
+esindy_wt+iopt           94  100   97  100  100  100  100  100  100   99.0
+paired difference of esindy_wt+iopt to each other arm (percentage points, +- 1 s.e.)
+  - esindy+variance       +56.2 +- 6.1
+  - esindy+dopt           +50.0 +- 6.1
+  - sbl+iopt              +13.9 +- 3.7
+  - esindy+random         +24.0 +- 4.8
+  - esindy_wt+random       -0.3 +- 0.3
+
+== competition, noise 10%: exact-support recovery (%) by number of measured points
+identification+acquisition   30   40   50   60   80   90  100  110  130   mean
+esindy+variance          19    9   16    9    6   12   12    6    6   10.8
+esindy+dopt              12    6    0    6    3    3    3    6    3   4.9
+sbl+iopt                 31   47   47   59   47   53   50   47   44   47.2
+esindy+random            16   16   25   16   25   19   28   34   31   23.3
+esindy_wt+random         91   78   78   88   88   84   88   84   91   85.4
+esindy_wt+iopt           91   88   94   91   84   84   88   88   94   88.9
+paired difference of esindy_wt+iopt to each other arm (percentage points, +- 1 s.e.)
+  - esindy+variance       +78.1 +- 4.9
+  - esindy+dopt           +84.0 +- 4.5
+  - sbl+iopt              +41.7 +- 5.9
+  - esindy+random         +65.6 +- 5.2
+  - esindy_wt+random       +3.5 +- 2.7
+
+== competition, noise 20%: exact-support recovery (%) by number of measured points
+identification+acquisition   30   40   50   60   80   90  100  110  130   mean
+esindy+variance           0    0    0    3    0    0    0    0    0   0.3
+esindy+dopt               0    3    0    3    0    0    0    0    0   0.7
+sbl+iopt                  6   16   22   16   25   44   34   31   28   24.7
+esindy+random             0    6    6    3    0    3    3    3    3   3.1
+esindy_wt+random         38   50   53   53   59   56   53   59   50   52.4
+esindy_wt+iopt           50   59   62   53   59   53   59   47   50   54.9
+paired difference of esindy_wt+iopt to each other arm (percentage points, +- 1 s.e.)
+  - esindy+variance       +54.5 +- 4.9
+  - esindy+dopt           +54.2 +- 4.9
+  - sbl+iopt              +30.2 +- 5.7
+  - esindy+random         +51.7 +- 5.6
+  - esindy_wt+random       +2.4 +- 5.1

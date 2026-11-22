@@ -1,0 +1,7 @@
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.7
+# optional: Modified SINDy baseline (src/baselines.py, msindy)
+# torch>=2.0
+# optional: pretrained comparison (src/compare_pretrained.py)
+# sympy>=1.12
